@@ -20,7 +20,7 @@
 ?>
 
 <div id="quienes-somos">
-    <div class="container p-xs-20">
+    <div class="container p-sm-20">
         <div class="row">
             <div class="col-12 col-lg-6">
                 <h3>¿Quiénes <span class="accent">somos?</h3>

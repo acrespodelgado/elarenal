@@ -1,5 +1,5 @@
 <div id="presentacion">
-    <div class="container pb-5 p-xs-20">
+    <div class="container mb-5 p-sm-20">
         <div class="row">
             <div class="col-12">
                 <h1>Presentación y bienvenida</h1>
@@ -9,7 +9,7 @@
         </div>
     </div>
     <?php echo do_shortcode('[smartslider3 slider="8"]'); ?>
-    <div class="container py-5 p-xs-20">
+    <div class="container py-5 p-sm-20">
         <div class="row">
             <div class="col-12">
                 <p>En el Curso 75/76, ya en vigor la Ley General de Educación de 1.970, pasó a denominarse Centro Nacional de Formación Profesional de 1º y 2º Grado con las Ramas de Metal, Electricidad, Delineación y Administrativa y Comercial y sus respectivas Especialidades de F.P.1 y F.P.2.</p>

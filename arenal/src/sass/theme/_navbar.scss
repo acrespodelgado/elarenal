@@ -1,11 +1,9 @@
 #pre-navbar {
     background: $primary;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     ul {
         display: flex;
+        justify-content: center;
         margin-bottom: 0;
         gap: 2rem;
         color: $href;
@@ -20,6 +18,22 @@
             color: $href;
             text-decoration: none;
         }
+    }
+
+    @media (max-width: 767px) {
+
+        ul {
+            gap: 0.5rem;
+
+            i {
+                font-size: 6px;
+            }
+
+            a {
+                font-size: 10px;
+            }
+        }
+        
     }
 }
 
@@ -57,6 +71,10 @@
         }
     }
     */
+
+    @media (max-width: 767px) {
+        margin-top: 24px;        
+    }
 }
 
 /*
@@ -66,18 +84,27 @@
 #navbarNavDropdown {
 
     @media (max-width: 767px) {
-        padding: 5rem 0;
-        transition: all 0.2s ease-in;
+        padding: 3rem 0;
     
         &.collapse {
             height: 100vh;
     
             #main-menu {
-                justify-content: center;
-                align-items: center;
+                //justify-content: center;
+                //align-items: center;
     
                 a {
-                    font-size: 24px;
+                    font-size: 18px;
+                }
+
+                .dropdown-menu {
+                    
+                    li {
+
+                        a {
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
         }

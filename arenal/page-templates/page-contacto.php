@@ -35,7 +35,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 
 				<?php include get_stylesheet_directory() . '/patterns/contacto/cabecera-contacto.php'; ?>
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3174.0414921325273!2d-5.927414123075451!3d37.29415043969858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1270438d4d830d%3A0xb75bc8098ff5106!2sCPIFP%20El%20Arenal!5e0!3m2!1ses!2ses!4v1754857198161!5m2!1ses!2ses" width="2560" height="500" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-100 map"></iframe>
-				<?php include get_stylesheet_directory() . '/patterns/contacto/formulario.php'; ?>
+				<?php include get_stylesheet_directory() . '/patterns/formularios/formulario.php'; ?>
 				<?php include get_stylesheet_directory() . '/patterns/logos/partners.php'; ?>
 
 				</main>

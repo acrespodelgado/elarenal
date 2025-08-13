@@ -42,7 +42,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 					<img src="<?php echo get_site_url();?>/img/fondo_noticia_2.png" class="absolute left img-responsive" alt="Decorador grado 2">
 				</div>	
                 <?php include get_stylesheet_directory() . '/patterns/opiniones/opiniones.php'; ?>
-                <?php include get_stylesheet_directory() . '/patterns/contacto/formulario.php'; ?>
+                <?php include get_stylesheet_directory() . '/patterns/formularios/formulario.php'; ?>
                 <?php include get_stylesheet_directory() . '/patterns/noticia/noticias-actualidad.php'; ?>
 
 				</main>

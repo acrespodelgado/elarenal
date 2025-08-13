@@ -1,5 +1,5 @@
 <div id="noticias">
-    <div class="container p-xs-20">
+    <div class="container p-sm-20">
         <div class="row">
             <div class="col-12">
                 <?php $secretaria_page = is_page('secretaria'); ?>
@@ -55,7 +55,7 @@
                 <?php 
                 if(!$noticias_page): ?>
                     <div class="text-center mt-4">
-                        <a href="<?php echo get_site_url(); ?>/noticias" class="btn btn-primary">Ver más <i class="fa fa-long-arrow-right ms-2"></i></a>
+                        <a href="<?php echo get_site_url(); ?>/noticias" class="btn btn-primary">Ver más <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 <?php else: 
                     understrap_pagination( [

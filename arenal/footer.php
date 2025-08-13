@@ -16,25 +16,24 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 <div class="wrapper" id="wrapper-footer">
-
-	<div class="container">
-
-		<footer class="site-footer row">
-			<div class="col col-12">
-				<div class="flex">
-					<div class="flex-start">
-						<a href="<?php echo get_site_url();?>" class="d-block mb-3">
-							<img src="<?php echo get_site_url();?>/img/footer_logo.png" class="img-fluid" alt="El Arenal">
-						</a>
-					</div>
-					<div class="flex-end">
-						<ul class="inline-list list-unstyled">
-							<li><a href="https://www.instagram.com/cpifpelarenal/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-							<li><a href="https://www.facebook.com/cpifpelarenal/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
+    <div class="container">
+        <footer class="site-footer">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="footer-logo">
+                            <a href="<?php echo get_site_url();?>" class="d-block mb-3">
+                                <img src="<?php echo get_site_url();?>/img/footer_logo.png" class="img-fluid" alt="El Arenal">
+                            </a>
+                        </div>
+                        <div class="footer-social">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item"><a href="https://www.instagram.com/cpifpelarenal/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.facebook.com/cpifpelarenal/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 			
 			<div class="col col-12 col-lg-4">
 				<p>Centro público integrado de formación profesional</p>

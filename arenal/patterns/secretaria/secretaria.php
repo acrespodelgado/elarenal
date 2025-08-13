@@ -1,5 +1,5 @@
 <div id="secretaria">
-    <div class="container p-xs-20">
+    <div class="container p-sm-20">
         <div class="row">
             <div class="col-12">
                 <h2>Nuestro <span class="accent">horario</span></h2>
@@ -7,7 +7,7 @@
         </div>
     </div>
     <div class="primary-background">
-        <div class="container p-xs-20">
+        <div class="container p-sm-20">
             <div class="row">
                 <div class="col-12 col-md-7">
                     <div class="info-container d-flex align-items-center">
@@ -34,18 +34,18 @@
             </div>
         </div>
     </div>
-    <div class="container links-container p-xs-20">
+    <div class="container links-container p-sm-20">
         <div class="row">
             <div class="col-12">
                 <p>En esta página podrás descargar y tener acceso a toda la información útil de tipo administrativo sobre el funcionamiento del centro.</p>
                 <div class="links">
-                    <a href="<?php echo get_site_url() . '/documentos/escolarizacion.pdf'; ?>" class="button" target="_blank" >ESCOLARIZACIÓN<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
-                    <a href="<?php echo get_site_url() . '/documentos/matriculacion.pdf'; ?>" class="button" target="_blank" >MATRICULACIÓN ALUMNADO CENTRO<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
-                    <a href="<?php echo get_site_url() . '/documentos/solicitud_titulos.pdf'; ?>" class="button" target="_blank" >TÍTULOS<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
-                    <a href="https://www.juntadeandalucia.es/educacion/secretariavirtual/accesoTramite/462" class="button" target="_blank">REGISTRO ELECTRÓNICO<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
-                    <a href="<?php echo get_site_url() . '/documentos/convalidaciones.pdf'; ?>" class="button" target="_blank" >CONVALIDACIONES<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
-                    <a href="<?php echo get_site_url() . '/documentos/formacion_empresas.pdf'; ?>" class="button" target="_blank" >PERÍODO DE FORMACIÓN EN EMPRESAS<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
-                    <a href="<?php echo get_site_url() . '/documentos/formacion_empresas.pdf'; ?>" class="button" target="_blank" >ANULACIÓN/ BAJA MATRÍCULA<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
+                    <a href="<?php echo get_site_url() . '/documentos/escolarizacion.pdf'; ?>" class="button" target="_blank" rel="nofollow">ESCOLARIZACIÓN<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
+                    <a href="<?php echo get_site_url() . '/documentos/matriculacion.pdf'; ?>" class="button" target="_blank" rel="nofollow">MATRICULACIÓN ALUMNADO CENTRO<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
+                    <a href="<?php echo get_site_url() . '/documentos/solicitud_titulos.pdf'; ?>" class="button" target="_blank" rel="nofollow">TÍTULOS<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
+                    <a href="https://www.juntadeandalucia.es/educacion/secretariavirtual/accesoTramite/462" class="button" target="_blank" rel="nofollow">REGISTRO ELECTRÓNICO<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
+                    <a href="<?php echo get_site_url() . '/documentos/convalidaciones.pdf'; ?>" class="button" target="_blank" rel="nofollow">CONVALIDACIONES<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
+                    <a href="<?php echo get_site_url() . '/documentos/formacion_empresas.pdf'; ?>" class="button" target="_blank" rel="nofollow">PERÍODO DE FORMACIÓN EN EMPRESAS<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
+                    <a href="<?php echo get_site_url() . '/documentos/formacion_empresas.pdf'; ?>" class="button" target="_blank" rel="nofollow">ANULACIÓN/ BAJA MATRÍCULA<img class="img-fluid icon" alt="ir" src="<?php echo get_site_url() . '/img/arrow_icon.png'; ?>"></a>
                 </div>
             </div>
         </div>

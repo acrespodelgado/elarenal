@@ -34,7 +34,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
                 <main class="site-main" id="main" role="main">
 
                 <?php while ( have_posts() ) : the_post(); ?>
-                    <div class="container p-xs-20" id="access">
+                    <div class="container p-sm-20" id="access">
                         <div class="row">
                             <div class="col col-12">
                                 <h1><?php the_title(); ?></h1>
@@ -47,7 +47,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
                         </div>
                     </div>
                 <?php endwhile; ?>
-                    <?php include get_stylesheet_directory() . '/patterns/contacto/formulario.php'; ?>
+                    <?php include get_stylesheet_directory() . '/patterns/formularios/formulario.php'; ?>
                     <?php include get_stylesheet_directory() . '/patterns/logos/partners.php'; ?>
                 </main>
 

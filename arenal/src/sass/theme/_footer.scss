@@ -34,8 +34,8 @@
         .flex {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start; /* Alinea por arriba */
-            flex-wrap: wrap; /* Opcional: mejora en móviles */
+            align-items: flex-start;
+            flex-wrap: wrap;
 
             .flex-start {
                 display: flex;
@@ -72,6 +72,89 @@
                 font-size: 18px;
                 line-height: 22px;
             }
+        }
+
+        .footer-logo {
+            margin-bottom: 2rem;
+            
+            img {
+                max-width: 138px;
+                height: auto;
+            }
+        }
+
+        .footer-social {
+            margin-bottom: 2rem;
+
+            ul {
+                display: flex;
+                gap: 1rem;
+                margin: 0;
+                padding: 0;
+
+                li {
+
+                    a, i {
+                        font-size: 24px;
+                        color: $accent;
+                    }
+                }
+            }
+        }
+
+        .footer-info {
+            margin-bottom: 2rem;
+
+            p, a {
+                color: white;
+                font-size: 14px;
+                margin-bottom: 0.5rem;
+                text-decoration: none;
+            }
+        }
+
+        .footer-menu {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+
+            .menu-column {
+                h4 {
+                    color: $accent;
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        margin-bottom: 0.5rem;
+
+                        a {
+                            color: white;
+                            font-size: 14px;
+                            text-decoration: none;
+                            transition: color 0.3s ease;
+
+                            &:hover {
+                                color: $accent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #wrapper-footer .site-footer {
+        .footer-menu {
+            grid-template-columns: 1fr;
         }
     }
 }

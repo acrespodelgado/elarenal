@@ -72,7 +72,7 @@
             endif;
         ?>
             <div class="oferta-contenido <?php echo $first ? '' : 'd-none'; ?>" id="oferta-<?php echo get_the_ID(); ?>">
-                <div class="row g-0 p-xs-20">
+                <div class="row g-0 p-sm-20 p-content">
                     <!-- IZQUIERDA -->
                     <div class="col col-12 col-xl-6 py-5 background">
                         <div class="px-lg-5">

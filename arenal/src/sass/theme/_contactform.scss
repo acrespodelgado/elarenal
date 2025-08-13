@@ -1,4 +1,5 @@
-#contact-form {
+#contact-form,
+#contact-form-empresas {
     margin: 3rem 0 5rem 0;
     
     a, h3, li, p {
@@ -111,7 +112,7 @@
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
 
         .contact-wrapper {
             padding: 2rem;
@@ -138,6 +139,41 @@
         
         li {
             font-size: 14px;
+        }
+    }
+}
+
+#contact-form-empresas {
+
+    .btn-white {
+        color: $primary;
+        font-size: 18px;
+        margin-top: 1rem;
+        text-transform: uppercase;
+
+        &:hover {
+            color: white;
+        }
+    }
+
+    h5 {
+        color: white;
+    }
+
+    select {
+
+        option {
+
+            &:hover {
+                &:hover,
+                &:focus,
+                &:active,
+                &:checked {
+                    background: linear-gradient($accent, $accent);
+                    background-color: $accent !important; /* for IE */
+                    color: white !important;
+                }
+            }
         }
     }
 }

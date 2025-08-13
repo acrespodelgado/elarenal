@@ -48,6 +48,29 @@ a {
     padding: 0;
 }
 
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    max-width: 100%;
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+// Mantener los paddings internos solo en las clases que lo necesiten
+.p-content {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: 1200px) {
+        padding-left: calc((100% - 1140px) / 2);
+        padding-right: calc((100% - 1140px) / 2);
+    }
+}
+
 .btn {
     padding: 5px 25px;
     border-radius: 12px;
@@ -76,6 +99,22 @@ a {
             opacity: 1;
         }
     }
+
+    &.btn-white {
+        background: white;
+        color: $primary;
+
+        &:hover {
+            background: $accent;
+            border: 1px solid $accent;
+            color: white;
+            opacity: 1;
+        }
+    }
+
+    i {
+        margin-left: 1rem;
+    }
 }
 
 .separator {
@@ -91,7 +130,7 @@ a {
     text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     h1 {
         font-size: 33px;
@@ -117,7 +156,7 @@ a {
         word-break: break-word;
     }
 
-    .p-xs-20 {
+    .p-sm-20 {
         padding: 0 20px;
     }
 }

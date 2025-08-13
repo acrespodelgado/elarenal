@@ -33,7 +33,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 
 				<main class="site-main" id="main" role="main">
                 
-                <div class="container p-xs-20">
+                <div class="container p-sm-20">
                     <div class="row">
                         <div class="col-12">
                             <h1><?php echo get_the_title(); ?></h1>
@@ -41,7 +41,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
                         </div>
                     </div>
                 </div>
-                <?php include get_stylesheet_directory() . '/patterns/contacto/formulario.php'; ?>
+                <?php include get_stylesheet_directory() . '/patterns/formularios/formulario.php'; ?>
 
 				</main>
 

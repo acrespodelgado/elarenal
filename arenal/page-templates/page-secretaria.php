@@ -35,7 +35,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
                 
 				<?php echo do_shortcode('[smartslider3 slider="6"]'); ?>
 				<?php include get_stylesheet_directory() . '/patterns/secretaria/secretaria.php'; ?>
-				<?php include get_stylesheet_directory() . '/patterns/contacto/formulario.php'; ?>
+				<?php include get_stylesheet_directory() . '/patterns/formularios/formulario.php'; ?>
                 <div id="noticia-background">
                     <img src="<?php echo get_site_url();?>/img/fondo_noticia_1.png" class="absolute right img-responsive" alt="Decorador noticia 1">
                     <?php include get_stylesheet_directory() . '/patterns/noticia/noticias-actualidad.php'; ?>

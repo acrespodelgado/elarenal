@@ -16289,6 +16289,28 @@ a:hover {
   padding: 0;
 }
 
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  max-width: 100%;
+}
+.container-fluid .row, .container-sm .row, .container-md .row, .container-lg .row, .container-xl .row, .container-xxl .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.p-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .p-content {
+    padding-left: calc((100% - 1140px) / 2);
+    padding-right: calc((100% - 1140px) / 2);
+  }
+}
+
 .btn, .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-info a.button, .wpcf7 input[type=submit] {
   padding: 5px 25px;
   border-radius: 12px;
@@ -16311,6 +16333,19 @@ a:hover {
   color: white;
   opacity: 1;
 }
+.btn.btn-white, .woocommerce-notices-wrapper .woocommerce-message a.btn-white.button, .woocommerce-info a.btn-white.button, .wpcf7 input.btn-white[type=submit] {
+  background: white;
+  color: #002562;
+}
+.btn.btn-white:hover, .woocommerce-notices-wrapper .woocommerce-message a.btn-white.button:hover, .woocommerce-info a.btn-white.button:hover, .wpcf7 input.btn-white[type=submit]:hover {
+  background: #FF8000;
+  border: 1px solid #FF8000;
+  color: white;
+  opacity: 1;
+}
+.btn i, .woocommerce-notices-wrapper .woocommerce-message a.button i, .woocommerce-info a.button i, .wpcf7 input[type=submit] i {
+  margin-left: 1rem;
+}
 
 .separator {
   width: 100%;
@@ -16326,7 +16361,7 @@ a:hover {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   h1, .h1 {
     font-size: 33px;
   }
@@ -16346,7 +16381,7 @@ a:hover {
   .row {
     word-break: break-word;
   }
-  .p-xs-20 {
+  .p-sm-20 {
     padding: 0 20px;
   }
 }
@@ -16380,8 +16415,8 @@ a:hover {
 #wrapper-footer .site-footer .flex {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Alinea por arriba */
-  flex-wrap: wrap; /* Opcional: mejora en móviles */
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 #wrapper-footer .site-footer .flex .flex-start {
   display: flex;
@@ -16411,19 +16446,79 @@ a:hover {
   font-size: 18px;
   line-height: 22px;
 }
+#wrapper-footer .site-footer .footer-logo {
+  margin-bottom: 2rem;
+}
+#wrapper-footer .site-footer .footer-logo img {
+  max-width: 138px;
+  height: auto;
+}
+#wrapper-footer .site-footer .footer-social {
+  margin-bottom: 2rem;
+}
+#wrapper-footer .site-footer .footer-social ul {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+#wrapper-footer .site-footer .footer-social ul li a, #wrapper-footer .site-footer .footer-social ul li i {
+  font-size: 24px;
+  color: #FF8000;
+}
+#wrapper-footer .site-footer .footer-info {
+  margin-bottom: 2rem;
+}
+#wrapper-footer .site-footer .footer-info p, #wrapper-footer .site-footer .footer-info a {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+#wrapper-footer .site-footer .footer-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+#wrapper-footer .site-footer .footer-menu .menu-column h4, #wrapper-footer .site-footer .footer-menu .menu-column .h4 {
+  color: #FF8000;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+#wrapper-footer .site-footer .footer-menu .menu-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#wrapper-footer .site-footer .footer-menu .menu-column ul li {
+  margin-bottom: 0.5rem;
+}
+#wrapper-footer .site-footer .footer-menu .menu-column ul li a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+#wrapper-footer .site-footer .footer-menu .menu-column ul li a:hover {
+  color: #FF8000;
+}
 
+@media (max-width: 768px) {
+  #wrapper-footer .site-footer .footer-menu {
+    grid-template-columns: 1fr;
+  }
+}
 #logos-junta {
   padding: 3rem 0;
 }
 
 #pre-navbar {
   background: #002562;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 #pre-navbar ul {
   display: flex;
+  justify-content: center;
   margin-bottom: 0;
   gap: 2rem;
   color: #8ACDFF;
@@ -16436,6 +16531,17 @@ a:hover {
   font-weight: bold;
   color: #8ACDFF;
   text-decoration: none;
+}
+@media (max-width: 767px) {
+  #pre-navbar ul {
+    gap: 0.5rem;
+  }
+  #pre-navbar ul i {
+    font-size: 6px;
+  }
+  #pre-navbar ul a {
+    font-size: 10px;
+  }
 }
 
 #main-nav {
@@ -16467,24 +16573,27 @@ a:hover {
 #main-nav #main-menu .menu-item-has-children a::after {
   border-top-color: #FF8000;
 }
+@media (max-width: 767px) {
+  #main-nav {
+    margin-top: 24px;
+  }
+}
 
 /*
  ** Dropdown movil pantalla completa
 */
 @media (max-width: 767px) {
   #navbarNavDropdown {
-    padding: 5rem 0;
-    transition: all 0.2s ease-in;
+    padding: 3rem 0;
   }
   #navbarNavDropdown.collapse {
     height: 100vh;
   }
-  #navbarNavDropdown.collapse #main-menu {
-    justify-content: center;
-    align-items: center;
-  }
   #navbarNavDropdown.collapse #main-menu a {
-    font-size: 24px;
+    font-size: 18px;
+  }
+  #navbarNavDropdown.collapse #main-menu .dropdown-menu li a {
+    font-size: 14px;
   }
 }
 
@@ -16536,10 +16645,7 @@ a:hover {
   padding: 5px 25px;
   margin: 1rem;
 }
-#home-slider #title-wrapper .btn i, #home-slider #title-wrapper .woocommerce-notices-wrapper .woocommerce-message a.button i, .woocommerce-notices-wrapper .woocommerce-message #home-slider #title-wrapper a.button i, #home-slider #title-wrapper .woocommerce-info a.button i, .woocommerce-info #home-slider #title-wrapper a.button i, #home-slider #title-wrapper .wpcf7 input[type=submit] i, .wpcf7 #home-slider #title-wrapper input[type=submit] i {
-  margin-left: 10px;
-}
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #home-slider #title-wrapper {
     top: -30px;
     padding: 1rem;
@@ -16573,7 +16679,7 @@ a:hover {
   left: 0;
   bottom: -150px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #noticia-background {
     padding: 0;
   }
@@ -16661,21 +16767,29 @@ a:hover {
   object-fit: contain;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .noticias-slider {
     margin-top: 5rem;
   }
 }
-#contact-form {
+#contact-form,
+#contact-form-empresas {
   margin: 3rem 0 5rem 0;
 }
-#contact-form a, #contact-form h3, #contact-form .h3, #contact-form li, #contact-form p {
+#contact-form a, #contact-form h3, #contact-form .h3, #contact-form li, #contact-form p,
+#contact-form-empresas a,
+#contact-form-empresas h3,
+#contact-form-empresas .h3,
+#contact-form-empresas li,
+#contact-form-empresas p {
   color: white;
 }
-#contact-form a {
+#contact-form a,
+#contact-form-empresas a {
   text-decoration: none;
 }
-#contact-form li {
+#contact-form li,
+#contact-form-empresas li {
   display: flex;
   margin-bottom: 1.5rem;
   font-size: 16px;
@@ -16683,25 +16797,30 @@ a:hover {
   align-items: flex-start;
   gap: 0.25rem;
 }
-#contact-form li .fa {
+#contact-form li .fa,
+#contact-form-empresas li .fa {
   flex: 0 0 36px;
   display: inline-block;
   font-size: 30px;
   color: #FF8000;
 }
-#contact-form li .fa.fa-envelope {
+#contact-form li .fa.fa-envelope,
+#contact-form-empresas li .fa.fa-envelope {
   font-size: 22px;
 }
-#contact-form li .fa.fa-marker-map {
+#contact-form li .fa.fa-marker-map,
+#contact-form-empresas li .fa.fa-marker-map {
   font-size: 36px;
 }
-#contact-form .contact-wrapper {
+#contact-form .contact-wrapper,
+#contact-form-empresas .contact-wrapper {
   position: relative;
   background: #002562;
   border-radius: 36px;
   padding: 3rem;
 }
-#contact-form .contact-wrapper .absolute-div {
+#contact-form .contact-wrapper .absolute-div,
+#contact-form-empresas .contact-wrapper .absolute-div {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -16712,7 +16831,8 @@ a:hover {
   gap: 1rem;
   flex-wrap: wrap;
 }
-#contact-form .contact-wrapper .absolute-div .text-block {
+#contact-form .contact-wrapper .absolute-div .text-block,
+#contact-form-empresas .contact-wrapper .absolute-div .text-block {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -16720,69 +16840,101 @@ a:hover {
   color: white;
   margin-left: 100px;
 }
-#contact-form .contact-wrapper .absolute-div p {
+#contact-form .contact-wrapper .absolute-div p,
+#contact-form-empresas .contact-wrapper .absolute-div p {
   font-size: 16px;
   font-weight: 300;
   margin: 0;
   color: white;
 }
-#contact-form .contact-wrapper .absolute-div h4, #contact-form .contact-wrapper .absolute-div .h4 {
+#contact-form .contact-wrapper .absolute-div h4, #contact-form .contact-wrapper .absolute-div .h4,
+#contact-form-empresas .contact-wrapper .absolute-div h4,
+#contact-form-empresas .contact-wrapper .absolute-div .h4 {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
   color: white;
 }
-#contact-form .contact-wrapper .absolute-div .decorator {
+#contact-form .contact-wrapper .absolute-div .decorator,
+#contact-form-empresas .contact-wrapper .absolute-div .decorator {
   position: absolute;
   bottom: -30px;
   left: -30px;
   z-index: 0;
 }
-#contact-form .contact-wrapper .wpcf7 {
+#contact-form .contact-wrapper .wpcf7,
+#contact-form-empresas .contact-wrapper .wpcf7 {
   max-width: none !important;
 }
-#contact-form .contact-wrapper .wpcf7 .inline-flex {
+#contact-form .contact-wrapper .wpcf7 .inline-flex,
+#contact-form-empresas .contact-wrapper .wpcf7 .inline-flex {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-#contact-form .contact-wrapper .wpcf7 .inline-flex p {
+#contact-form .contact-wrapper .wpcf7 .inline-flex p,
+#contact-form-empresas .contact-wrapper .wpcf7 .inline-flex p {
   margin: 0;
 }
-#contact-form .contact-wrapper .wpcf7 .inline-flex .wpcf7-submit {
+#contact-form .contact-wrapper .wpcf7 .inline-flex .wpcf7-submit,
+#contact-form-empresas .contact-wrapper .wpcf7 .inline-flex .wpcf7-submit {
   color: white;
   background: #FF8000;
   padding: 5px 45px;
   border-radius: 13px;
 }
-#contact-form .contact-wrapper .wpcf7 .inline-flex .wpcf7-spinner {
+#contact-form .contact-wrapper .wpcf7 .inline-flex .wpcf7-spinner,
+#contact-form-empresas .contact-wrapper .wpcf7 .inline-flex .wpcf7-spinner {
   display: none;
 }
-@media (max-width: 768px) {
-  #contact-form .contact-wrapper {
+@media (max-width: 767px) {
+  #contact-form .contact-wrapper,
+  #contact-form-empresas .contact-wrapper {
     padding: 2rem;
   }
-  #contact-form .contact-wrapper .absolute-div {
+  #contact-form .contact-wrapper .absolute-div,
+  #contact-form-empresas .contact-wrapper .absolute-div {
     position: relative;
     align-items: start;
     justify-content: start;
     padding: 1rem 0;
   }
-  #contact-form .contact-wrapper .absolute-div .text-block {
+  #contact-form .contact-wrapper .absolute-div .text-block,
+  #contact-form-empresas .contact-wrapper .absolute-div .text-block {
     align-items: left;
     margin-left: 0;
     padding-bottom: 1rem;
   }
-  #contact-form .contact-wrapper .absolute-div .decorator {
+  #contact-form .contact-wrapper .absolute-div .decorator,
+  #contact-form-empresas .contact-wrapper .absolute-div .decorator {
     width: 20%;
     bottom: -50px;
     left: -40px;
   }
-  #contact-form li {
+  #contact-form li,
+  #contact-form-empresas li {
     font-size: 14px;
   }
+}
+
+#contact-form-empresas .btn-white {
+  color: #002562;
+  font-size: 18px;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+#contact-form-empresas .btn-white:hover {
+  color: white;
+}
+#contact-form-empresas h5, #contact-form-empresas .h5 {
+  color: white;
+}
+#contact-form-empresas select option:hover:hover, #contact-form-empresas select option:hover:focus, #contact-form-empresas select option:hover:active, #contact-form-empresas select option:hover:checked {
+  background: linear-gradient(#FF8000, #FF8000);
+  background-color: #FF8000 !important; /* for IE */
+  color: white !important;
 }
 
 #opiniones {
@@ -16793,30 +16945,25 @@ a:hover {
   height: 400px;
   position: relative;
 }
-#opiniones #carouselOpiniones,
-#opiniones #carouselOpiniones .carousel-inner {
+#opiniones #carouselOpiniones, #opiniones #carouselOpiniones .carousel-inner {
   display: flex;
   align-items: center;
   height: 400px;
 }
-#opiniones #carouselOpiniones .carousel-item p.nombre,
-#opiniones #carouselOpiniones .carousel-inner .carousel-item p.nombre {
+#opiniones #carouselOpiniones .carousel-item .nombre {
   color: #002562;
   font-size: 20px;
   font-weight: bold;
 }
-#opiniones #carouselOpiniones .carousel-item .opinion,
-#opiniones #carouselOpiniones .carousel-inner .carousel-item .opinion {
+#opiniones #carouselOpiniones .carousel-item .opinion {
   width: 70%;
 }
-#opiniones #carouselOpiniones .carousel-item .opinion p,
-#opiniones #carouselOpiniones .carousel-inner .carousel-item .opinion p {
+#opiniones #carouselOpiniones .carousel-item .opinion p {
   color: #002562;
   font-size: 13px;
   font-weight: 400;
 }
-#opiniones #carouselOpiniones .carousel-control-next,
-#opiniones #carouselOpiniones .carousel-control-prev {
+#opiniones #carouselOpiniones .carousel-control-next, #opiniones #carouselOpiniones .carousel-control-prev {
   position: relative !important;
   background: #002562;
   padding: 5px 25px;
@@ -16825,31 +16972,26 @@ a:hover {
   border-radius: 6px;
   opacity: 1;
 }
-#opiniones #carouselOpiniones .carousel-control-next i,
-#opiniones #carouselOpiniones .carousel-control-prev i {
+#opiniones #carouselOpiniones .carousel-control-next i, #opiniones #carouselOpiniones .carousel-control-prev i {
   color: #FF8000;
+  margin-left: 0;
 }
-#opiniones #carouselOpiniones .carousel-control-next:focus, #opiniones #carouselOpiniones .carousel-control-next:hover,
-#opiniones #carouselOpiniones .carousel-control-prev:focus,
-#opiniones #carouselOpiniones .carousel-control-prev:hover {
+#opiniones #carouselOpiniones .carousel-control-next:focus, #opiniones #carouselOpiniones .carousel-control-next:hover, #opiniones #carouselOpiniones .carousel-control-prev:focus, #opiniones #carouselOpiniones .carousel-control-prev:hover {
   background: #FF8000;
   opacity: 1;
 }
-#opiniones #carouselOpiniones .carousel-control-next:focus i, #opiniones #carouselOpiniones .carousel-control-next:hover i,
-#opiniones #carouselOpiniones .carousel-control-prev:focus i,
-#opiniones #carouselOpiniones .carousel-control-prev:hover i {
+#opiniones #carouselOpiniones .carousel-control-next:focus i, #opiniones #carouselOpiniones .carousel-control-next:hover i, #opiniones #carouselOpiniones .carousel-control-prev:focus i, #opiniones #carouselOpiniones .carousel-control-prev:hover i {
   color: #002562;
 }
+#opiniones #carouselOpiniones .carousel-control-next.disabled, #opiniones #carouselOpiniones .carousel-control-prev.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
 #opiniones #carouselOpiniones .carousel-control-prev {
-  left: 0rem;
+  left: 0;
 }
 #opiniones #carouselOpiniones .carousel-control-next {
   right: -1rem;
-}
-#opiniones .carousel-control-prev.disabled,
-#opiniones .carousel-control-next.disabled {
-  pointer-events: none;
-  opacity: 0.3;
 }
 
 #grados h3, #grados .h3 {
@@ -16907,7 +17049,7 @@ a:hover {
   color: white;
   letter-spacing: -1px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #grado-slider h1, #grado-slider .h1 {
     font-size: 30px;
   }
@@ -16975,7 +17117,7 @@ a:hover {
   font-size: 25px;
   margin-bottom: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .oferta-contenido {
     height: auto;
   }
@@ -17014,7 +17156,7 @@ a:hover {
 #oferta-educativa-grado li:last-child {
   margin-bottom: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #oferta-educativa-grado p, #oferta-educativa-grado li {
     font-size: 18px;
   }
@@ -17042,7 +17184,7 @@ a:hover {
   color: #FF8000;
   font-size: 64px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #oferta-educativa-grado #oferta-grado-portada span {
     font-size: 22px;
   }
@@ -17126,7 +17268,7 @@ a:hover {
   padding-bottom: 10px;
   margin-top: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #oferta-educativa-grado #oferta-grados-modulos .light-background .modulo-item p {
     font-size: 24px;
   }
@@ -17188,7 +17330,7 @@ a:hover {
 #oferta-educativa-grado #oferta-grados-carnes .carnes .col-background.primary-background p {
   color: white;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #oferta-educativa-grado #oferta-grados-niveles .niveles .col-background p,
   #oferta-educativa-grado #oferta-grados-niveles .carnes .col-background p,
   #oferta-educativa-grado #oferta-grados-carnes .niveles .col-background p,
@@ -17282,7 +17424,7 @@ a:hover {
 #contact-header .contact-info .info-box .social-icons a:hover {
   color: #002E6D;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #contact-header h1, #contact-header .h1 {
     font-size: 40px;
   }
@@ -17369,7 +17511,7 @@ a:hover {
   justify-content: space-between;
   text-align: left;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #secretaria h2, #secretaria .h2 {
     font-size: 40px;
   }
@@ -17398,7 +17540,7 @@ a:hover {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .secretaria-slider {
     margin-top: 5rem;
   }
@@ -17409,7 +17551,7 @@ a:hover {
   gap: 20px;
   margin: 3rem 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #presentacion .d-flex,
   #presentacion-final .d-flex {
     flex-direction: column;
@@ -17474,7 +17616,7 @@ a:hover {
 #certificados .btn:hover i, #certificados .woocommerce-notices-wrapper .woocommerce-message a.button:hover i, .woocommerce-notices-wrapper .woocommerce-message #certificados a.button:hover i, #certificados .woocommerce-info a.button:hover i, .woocommerce-info #certificados a.button:hover i, #certificados .wpcf7 input[type=submit]:hover i, .wpcf7 #certificados input[type=submit]:hover i {
   color: #002562;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #certificados h1, #certificados .h1 {
     max-width: 100%;
   }
@@ -17528,7 +17670,7 @@ a:hover {
 #certificados-acreditacion .btn:hover i, #certificados-acreditacion .woocommerce-notices-wrapper .woocommerce-message a.button:hover i, .woocommerce-notices-wrapper .woocommerce-message #certificados-acreditacion a.button:hover i, #certificados-acreditacion .woocommerce-info a.button:hover i, .woocommerce-info #certificados-acreditacion a.button:hover i, #certificados-acreditacion .wpcf7 input[type=submit]:hover i, .wpcf7 #certificados-acreditacion input[type=submit]:hover i {
   color: #002562;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #certificados-acreditacion p, #certificados-acreditacion li {
     font-size: 16px;
   }
@@ -17538,6 +17680,33 @@ a:hover {
   #certificados-acreditacion .btn i, #certificados-acreditacion .woocommerce-notices-wrapper .woocommerce-message a.button i, .woocommerce-notices-wrapper .woocommerce-message #certificados-acreditacion a.button i, #certificados-acreditacion .woocommerce-info a.button i, .woocommerce-info #certificados-acreditacion a.button i, #certificados-acreditacion .wpcf7 input[type=submit] i, .wpcf7 #certificados-acreditacion input[type=submit] i {
     font-size: 20px;
   }
+}
+
+#oferta-empleo-contenido h3, #oferta-empleo-contenido .h3,
+#solicitud-alumnos-contenido h3,
+#solicitud-alumnos-contenido .h3,
+#solicitud-alumnos-fct h3,
+#solicitud-alumnos-fct .h3 {
+  font-weight: 400;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #002562;
+  margin-bottom: 20px;
+}
+#oferta-empleo-contenido p,
+#solicitud-alumnos-contenido p,
+#solicitud-alumnos-fct p {
+  font-size: 16px;
+}
+
+#solicitud-alumnos-fct {
+  margin-bottom: 3rem;
+}
+#solicitud-alumnos-fct h4, #solicitud-alumnos-fct .h4 {
+  font-weight: 500;
+}
+#solicitud-alumnos-fct ul li {
+  color: #002562;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=child-theme.css.map */

@@ -6,21 +6,21 @@
     height: 400px;
     position: relative;
 
-    #carouselOpiniones,
-    #carouselOpiniones .carousel-inner {
-        display: flex;
-        align-items: center;
-        height: 400px;
+    #carouselOpiniones {
+        &, .carousel-inner {
+            display: flex;
+            align-items: center;
+            height: 400px;
+        }
 
         .carousel-item {
-            
-            p.nombre {
+            .nombre {
                 color: $primary;
                 font-size: 20px;
                 font-weight: bold;
             }
 
-            .opinion{
+            .opinion {
                 width: 70%;
 
                 p {
@@ -30,43 +30,43 @@
                 }
             }
         }
-    }
 
-    #carouselOpiniones .carousel-control-next, 
-    #carouselOpiniones .carousel-control-prev {
-        position: relative !important;
-        background: $primary;
-        padding: 5px 25px;
-        width: fit-content;
-        border-radius: 6px;
-        opacity: 1;
+        .carousel-control {
+            &-next, &-prev {
+                position: relative !important;
+                background: $primary;
+                padding: 5px 25px;
+                width: fit-content;
+                border-radius: 6px;
+                opacity: 1;
 
-        i {
-            color: $accent;
-        }
+                i {
+                    color: $accent;
+                    margin-left: 0;
+                }
 
-        &:focus, &:hover {
-            background: $accent;
-            opacity: 1;
+                &:focus, &:hover {
+                    background: $accent;
+                    opacity: 1;
 
-            i {
-                color: $primary;
+                    i {
+                        color: $primary;
+                    }
+                }
+
+                &.disabled {
+                    pointer-events: none;
+                    opacity: 0.3;
+                }
+            }
+
+            &-prev {
+                left: 0;
+            }
+
+            &-next {
+                right: -1rem;
             }
         }
     }
-
-    #carouselOpiniones .carousel-control-prev {
-        left: 0rem;
-    }
-
-    #carouselOpiniones .carousel-control-next {
-        right: -1rem;
-    }
-
-    .carousel-control-prev.disabled,
-    .carousel-control-next.disabled {
-        pointer-events: none;
-        opacity: 0.3;
-    }
-
 }

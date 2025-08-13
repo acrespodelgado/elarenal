@@ -1,4 +1,4 @@
-<div class="container p-xs-20">
+<div class="container p-sm-20">
     <div class="row">
         <div class="col col-12">
             <h1><?php echo get_the_title(); ?></h1>

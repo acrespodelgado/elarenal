@@ -48,7 +48,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 				<?php include get_stylesheet_directory() . '/patterns/oferta-educativa/oferta-educativa-slider.php'; ?>
                 <?php include get_stylesheet_directory() . '/patterns/home/quienes-somos.php'; ?>
                 <?php include get_stylesheet_directory() . '/patterns/opiniones/opiniones.php'; ?>
-                <?php include get_stylesheet_directory() . '/patterns/contacto/formulario.php'; ?>
+                <?php include get_stylesheet_directory() . '/patterns/formularios/formulario.php'; ?>
 				<?php include get_stylesheet_directory() . '/patterns/logos/partners.php'; ?>
 
 				</main>

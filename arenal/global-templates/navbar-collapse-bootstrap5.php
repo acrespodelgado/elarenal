@@ -13,26 +13,26 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <div id="pre-navbar" class="fixed-top">
-	<div class="container-fluid d-flex justify-content-between align-items-center">
-		<div class="row">
-			<div class="col col-12">
-				<ul class="list-unstyled">
-					<li><a href="tel:+ 34 955 62 25 13">+ 34 955 62 25 13</a></li>
-					<li><i class="fa fa-square"></i></li>
-					<li><a href="mailto:info@fpelarenal.es">info@fpelarenal.es</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <ul class="list-unstyled">
+                    <li><a href="tel:+ 34 955 62 25 13">+ 34 955 62 25 13</a></li>
+                    <li><i class="fa fa-square"></i></li>
+                    <li><a href="mailto:info@fpelarenal.es">info@fpelarenal.es</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 
-<nav id="main-nav" class="navbar navbar-expand-md fixed-top" aria-labelledby="main-nav-label">
+<nav id="main-nav" class="navbar navbar-expand-lg fixed-top" aria-labelledby="main-nav-label">
 
 	<h2 id="main-nav-label" class="screen-reader-text">
 		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
 	</h2>
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	<div class="<?php echo esc_attr( $container ); ?> p-content">
 
 		<!-- Your site branding in the menu -->
 		<?php get_template_part( 'global-templates/navbar-branding' ); ?>

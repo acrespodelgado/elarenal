@@ -7,7 +7,7 @@
 </div>
 
 <div id="opiniones">
-    <div class="container-fluid p-xs-20">
+    <div class="container-fluid p-sm-20">
         <div class="row justify-content-center align-items-center h-100">
             <div class="col-12 col-lg-5">
                 <div id="carouselOpiniones" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="false">

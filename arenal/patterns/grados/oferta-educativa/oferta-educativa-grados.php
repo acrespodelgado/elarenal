@@ -1,7 +1,7 @@
 <div id="oferta-educativa-grado">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 p-0">
                 <?php 
                     $grado_name = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 

@@ -1,5 +1,5 @@
 <div id="presentacion-final">
-    <div class="container py-5 p-xs-20">    
+    <div class="container py-5 p-sm-20">    
         <div class="row">
             <div class="col-12">
                 <p>Además, según convocatoria, se ofertan Cualificaciones Profesionales y Módulos Formativos. Igualmente, acreditamos aquellas competencias profesionales correspondientes a nuestra oferta formativa.</p>

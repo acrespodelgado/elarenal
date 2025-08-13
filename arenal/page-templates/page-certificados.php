@@ -35,7 +35,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
                 
                 <?php include get_stylesheet_directory() . '/patterns/certificados/certificados.php'; ?>
 				<?php include get_stylesheet_directory() . '/patterns/certificados/acreditacion.php'; ?>
-                <?php include get_stylesheet_directory() . '/patterns/contacto/formulario.php'; ?>
+                <?php include get_stylesheet_directory() . '/patterns/formularios/formulario.php'; ?>
 
 				</main>
 
