@@ -1,0 +1,139 @@
+#home-slider {
+    overflow: hidden;
+    border-radius: 0 0 27px 27px;
+
+    .home-slider {
+        /* padding: 0 3rem; */
+        border-radius: 0 0 27px 27px;
+    }
+
+    #title-wrapper {
+        position: relative;
+        top: -60px;
+        background: white;
+        text-align: center;
+        border-radius: 25px;
+        padding: 1rem 1.5rem;
+        width: fit-content;
+        margin: auto;
+
+        h1 {
+            font-size: 71px;
+            font-weight: bold;
+            color: $primary;
+        }
+        
+        p {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .btn {
+            font-size: 18px;
+            font-weight: 400;
+            padding: 5px 25px;
+            margin: 1rem;
+
+            i {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        #title-wrapper {
+            top: -30px;
+            padding: 1rem;
+            width: 90%;
+
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .btn {
+                font-size: 16px;
+                padding: 5px 15px;
+            }
+        }
+        
+    }
+}
+
+#noticia-background {
+    position: relative;
+    padding: 5rem 0;
+
+    img.absolute {
+        position: absolute;
+        z-index: -1;
+
+        &.right {
+            right: 0;
+            top: -150px;
+        }
+
+        &.left {
+            left: 0;
+            bottom: -150px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 0;        
+    }
+}
+
+#quienes-somos {
+    background: url('http://el-arenal.local/img/fondo_quienes_somos.png');
+    background-size: auto;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    margin-top: 5rem;
+
+    .faq-item {
+        width: 100%;
+        border-bottom: 1px solid $primary;
+        
+        .faq-header {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            cursor: pointer;
+            gap: 1rem;
+            
+            h5 {
+                font-size: 18px;
+                font-weight: 400;
+                color: $accent;
+                margin: 0;
+            }
+            
+            i {
+                color: $accent;
+                transition: transform 0.3s ease;
+            }
+        }
+        
+        .faq-content {
+            display: none;
+            padding: 0 0 15px 0;
+
+            p {
+                font-size: 13px;
+                font-weight: 300;
+                color: $primary;
+            }
+        }
+        
+        &.active {
+
+            .fa-long-arrow-up {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+@import "theme/child_theme_variables";                   // <------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+@import "assets/bootstrap5/bootstrap";                             // <------- Loads Bootstrap5
+@import "assets/understrap/theme/understrap";  // <------- Loads the Understrap defaults. Just a few classes to incorporate BS in WP
+@import "assets/understrap/theme/woocommerce"; // <------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
+
+// Optional files - If you don´t use the corresponding scripts/fonts comment em out
+@import "assets/fontawesome/font-awesome";                           // <------- Font Awesome Icon font
+@import "assets/underscores";                            // <------- Underscores media styles
+
+// Any additional imported files //
+@import "assets/understrap/theme/colors";           // <-------- This creates the necessary bootstrap color classes.
+@import "assets/understrap/theme/blocks";           // <-------- This adds Bootstrap styles to blocks.
+@import "assets/understrap/theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
+
+@import "assets/hamburgers/hamburgers";             // <-------- Menú de hamburguesa custom
+
+@import "theme/child_theme";                             // <------- Add your styles into this file
+@import "theme/footer";
+@import "theme/navbar";
+@import "theme/hamburgers";
+
+@import "theme/home";
+@import "theme/noticias";
+@import "theme/contactform";
+@import "theme/opiniones";
+@import "theme/grados";
+@import "theme/proyecto_funcional";
+@import "theme/oferta_educativa";
+@import "theme/oferta_educativa_grados";
+@import "theme/contact";
+@import "theme/secretaria";
+@import "theme/presentacion";
+@import "theme/access";
+@import "theme/certificados";

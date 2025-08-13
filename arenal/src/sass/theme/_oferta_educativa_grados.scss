@@ -1,0 +1,211 @@
+#oferta-educativa-grado {
+
+    h3 {
+        margin-bottom: 1.5rem;
+    }
+
+    p, li {
+        color: $primary;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    li {
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        p, li {
+            font-size: 18px;
+        }
+    }
+
+    #oferta-grado-portada {
+
+        span {
+            color: $primary;
+            font-size: 26px;
+            font-weight: 500;
+
+            &.accent {
+                color: $accent;
+            }
+        }
+
+        p {
+            font-size: 21px;
+            font-weight: 300;
+        }
+
+        .big {
+            margin: 1.5rem 0;
+
+            p {
+                font-size: 27px;
+                font-weight: 400;
+            }
+        }
+
+        i {
+            color: $accent;
+            font-size: 64px;
+        }
+
+        @media (max-width: 768px) {
+
+            span {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .big {
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            i {
+                font-size: 48px;
+            }
+        }
+    }
+
+    #oferta-grados-requisitos,
+    #oferta-grados-trabajo,
+    #oferta-grados-mas-info {
+        background: $primary;
+        padding: 3rem 0;
+
+        .d-flex {
+            margin-bottom: 3rem;
+            gap: 15px;
+        }
+
+        h3, li, a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin-bottom: 0;
+
+            li {
+
+                &::marker {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    #oferta-grados-aprender {
+        padding: 3rem 0;
+
+        ul {
+            margin-top: 2rem;
+
+            li {
+
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    #oferta-grados-modulos {
+        .light-background {
+            background: $light;
+            border-radius: 104px;
+            padding: 1.5rem 5rem;
+            margin: 3rem 0;
+
+            .modulo-item {
+                margin: 3rem 0;
+
+                p {
+                    color: $primary;
+                    font-size: 32px;
+                    font-weight: bold;
+    
+                    &.numero {
+                        color: $accent;
+                        border-bottom: 1px solid $accent;
+                        padding-bottom: 10px;
+                        margin-top: 10px;
+                    }
+                }
+
+                @media (max-width: 768px) {
+
+                    p {
+                        font-size: 24px;
+                    }
+                }
+            }         
+        }
+    }
+
+    #oferta-grados-niveles,
+    #oferta-grados-carnes {
+        padding: 5rem 0;
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        img {
+            margin-right: 15px;
+        }
+
+        .niveles,
+        .carnes {
+            margin-top: 1.5rem;
+
+            .col-background {
+                padding: 3rem 0;
+    
+                p {
+                    font-size: 32px;
+                    font-weight: bold;
+                    margin-bottom: 0;
+                }
+    
+                &.light-background {
+                    background: $href;
+        
+                    p {
+                        color: $primary;
+                    }
+                }
+        
+                &.primary-background {
+                    background: $primary;
+        
+                    p {
+                        color: white;
+                    }
+                }
+
+                @media (max-width: 768px) {
+
+                    p {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

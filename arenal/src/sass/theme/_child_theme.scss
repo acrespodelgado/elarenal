@@ -1,0 +1,123 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: $primary;
+}
+
+h3 {
+    font-size: 33px;
+    font-weight: bold;
+    color: $primary;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 300;
+    color: $primary;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    color: $primary;
+}
+
+.accent {
+    color: $accent;
+}
+
+a {
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+#full-width-page-wrapper {
+    padding: 0;
+    margin-top: 150px;
+}
+
+#content, #primary {
+    padding: 0;
+}
+
+.btn {
+    padding: 5px 25px;
+    border-radius: 12px;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        transition: all 0.3s ease-in-out;
+    }
+
+    &.btn-primary {
+
+        &:hover {
+            background: $accent;
+            border: 1px solid $accent;
+            opacity: 1;
+        }
+    }
+
+    &.btn-accent {
+        background: $accent;
+        color: white;
+    
+        &:hover {
+            background: $primary;
+            color: white;
+            opacity: 1;
+        }
+    }
+}
+
+.separator {
+    width: 100%;
+    max-height: 70px;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 33px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+    
+    .img-fluid {
+        max-height: fit-content;
+    }
+
+    .row {
+        word-break: break-word;
+    }
+
+    .p-xs-20 {
+        padding: 0 20px;
+    }
+}

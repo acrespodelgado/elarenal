@@ -1,0 +1,80 @@
+.oferta-contenido {
+    height: 700px;
+    overflow: hidden;
+    background: $primary;
+    color: white;
+
+    .background {
+        background: url('http://el-arenal.local/img/fondo_oferta_educativa.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .img-fluid.object-fit-cover {
+        height: 700px;
+    }
+
+    h4 {
+        color: white;
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    h5 {
+        font-size: 16px;
+        font-weight: 300;
+        color: $accent;
+        margin-top: 2rem;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: 300;
+        color: white;
+    }
+
+    ul {
+        
+        li {
+
+            p {
+                font-size: 25px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        height: auto;
+
+        h4 {
+            font-size: 20px;
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        ul {
+            li {
+
+                img {
+                    width: 25px;
+                    margin-right: 1rem !important;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .img-fluid.object-fit-cover {
+            height: auto !important;
+        }
+    }
+}

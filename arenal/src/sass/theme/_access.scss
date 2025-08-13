@@ -1,0 +1,27 @@
+#access {
+    h1 {
+        margin-bottom: 3rem;
+    }
+
+    h3 {
+        margin-top: 5rem;
+        color: $accent;
+    }
+
+    p a {
+        font-size: 33px;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        text-decoration: none;
+    }
+
+    .wp-element-button {
+        border: 0px;
+        background: none;
+
+        &:hover {
+            color: white;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+#wrapper-footer {
+    background: $primary;
+    padding: 3rem 0;
+
+    .site-footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
+        p, li, a {
+            font-size: 14px;
+            margin-bottom: 3px;
+            color: white;
+        }
+    
+        ul.list-unstyled {
+            a {
+                color: $href;
+            }
+        }
+    
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    
+        h5 {
+            font-size: 18px;
+            font-weight: 400;
+            color: $accent;
+            margin-bottom: 20px;
+        }
+        
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Alinea por arriba */
+            flex-wrap: wrap; /* Opcional: mejora en móviles */
+
+            .flex-start {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            .flex-end {
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-end;
+        
+                .inline-list {
+                    display: flex;
+                    gap: 1.5rem;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+        
+                    li {
+                        display: inline-block;
+                    }
+        
+                    a {
+                        color: $accent;
+                        text-decoration: none;
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    
+        .menu {
+            a {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+#logos-junta {
+    padding: 3rem 0;
+}

@@ -1,0 +1,126 @@
+#certificados {
+
+    h1 {
+        margin-bottom: 1.5rem;
+        max-width: 60%;
+    }
+
+    p {
+        font-size: 22px;
+
+        &.big {
+            font-weight: bold;
+            margin: 2rem 0 1.5rem 0;
+        }
+    }
+
+    i.fa-clock-o {
+        font-size: 48px;
+        margin-right: 15px;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500;
+        margin-right: 20px;
+
+        i {
+            font-size: 22px;
+        }
+
+        &:hover {
+            i {
+                color: $primary;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        h1 {
+            max-width: 100%;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .btn {
+            font-size: 18px;
+
+            i {
+                font-size: 20px;
+            }
+        }
+        
+    }
+}
+
+#certificados-acreditacion {
+    margin-top: 1.5rem;
+
+    h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    p, li {
+        font-size: 22px;
+    }
+
+    .primary-background {
+        background-color: $primary;
+        padding: 3rem 0;
+        margin-top: 1.5rem;
+    }
+
+    h3 {
+        margin-bottom: 3rem;
+    }
+
+    ul {
+        margin: 3rem 0;
+
+        li {
+            color: $primary;
+            margin-bottom: 1.5rem;
+    
+            img {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .btn {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 500;
+        margin-right: 20px;
+
+        i {
+            font-size: 22px;
+        }
+
+        &:hover {
+            i {
+                color: $primary;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        p, li {
+            font-size: 16px;
+        }
+
+        .btn {
+            font-size: 18px;
+
+            i {
+                font-size: 20px;
+            }
+        }
+        
+    }
+}

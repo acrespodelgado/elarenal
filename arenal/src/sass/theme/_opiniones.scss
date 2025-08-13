@@ -1,0 +1,72 @@
+#opiniones {
+    background: url('http://el-arenal.local/img/fondo_opiniones.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 0 3rem 0;
+    height: 400px;
+    position: relative;
+
+    #carouselOpiniones,
+    #carouselOpiniones .carousel-inner {
+        display: flex;
+        align-items: center;
+        height: 400px;
+
+        .carousel-item {
+            
+            p.nombre {
+                color: $primary;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .opinion{
+                width: 70%;
+
+                p {
+                    color: $primary;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    #carouselOpiniones .carousel-control-next, 
+    #carouselOpiniones .carousel-control-prev {
+        position: relative !important;
+        background: $primary;
+        padding: 5px 25px;
+        width: fit-content;
+        border-radius: 6px;
+        opacity: 1;
+
+        i {
+            color: $accent;
+        }
+
+        &:focus, &:hover {
+            background: $accent;
+            opacity: 1;
+
+            i {
+                color: $primary;
+            }
+        }
+    }
+
+    #carouselOpiniones .carousel-control-prev {
+        left: 0rem;
+    }
+
+    #carouselOpiniones .carousel-control-next {
+        right: -1rem;
+    }
+
+    .carousel-control-prev.disabled,
+    .carousel-control-next.disabled {
+        pointer-events: none;
+        opacity: 0.3;
+    }
+
+}
