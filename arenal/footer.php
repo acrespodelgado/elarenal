@@ -18,9 +18,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper" id="wrapper-footer">
     <div class="container">
         <footer class="site-footer">
-            <div class="row">
+            <div class="row w-100">
                 <div class="col-12">
-                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-between">
                         <div class="footer-logo">
                             <a href="<?php echo get_site_url();?>" class="d-block mb-3">
                                 <img src="<?php echo get_site_url();?>/img/footer_logo.png" class="img-fluid" alt="El Arenal">
@@ -34,42 +34,43 @@ $container = get_theme_mod( 'understrap_container_type' );
                         </div>
                     </div>
                 </div>
-			
-			<div class="col col-12 col-lg-4">
-				<p>Centro público integrado de formación profesional</p>
-				<p><a href="https://maps.app.goo.gl/U6H6Tugc6DVxcSgMA">Avenida Ramón y Cajal, s/n · 41701 Dos Hermanas (Sevilla)</a></p>
-				<ul class="list-unstyled">
-					<li><a href="mailto:info@fpelarenal.es">info@fpelarenal.es</a></li>
-					<li><a href="mailto:orientacion@fpelarenal.es">orientacion@fpelarenal.es</a></li>
-					<li><a href="tel:+34 955 62 25 13 ">+34 955 62 25 13 </a></li>
-				</ul>
 			</div>
+			<div class="row w-100 align-items-end">
+				<div class="col col-12 col-lg-4">
+					<p>Centro público integrado de formación profesional</p>
+					<p><a href="https://maps.app.goo.gl/U6H6Tugc6DVxcSgMA">Avenida Ramón y Cajal, s/n · 41701 Dos Hermanas (Sevilla)</a></p>
+					<ul class="list-unstyled">
+						<li><a href="mailto:info@fpelarenal.es">info@fpelarenal.es</a></li>
+						<li><a href="mailto:orientacion@fpelarenal.es">orientacion@fpelarenal.es</a></li>
+						<li><a href="tel:+34 955 62 25 13 ">+34 955 62 25 13 </a></li>
+					</ul>
+				</div>
 
-			<div class="col col-12 col-lg-4">
-				<h5>Información</h5>
-				<ul class="menu">
-					<li><a href="<?php echo get_site_url();?>/politica-de-privacidad">Política de privacidad</a></li>
-					<li><a href="<?php echo get_site_url();?>/aviso-legal">Aviso Legal</a></li>
-					<li><a href="<?php echo get_site_url();?>/politica-de-cookies">Política de cookies</a></li>
-					<li><a href="<?php echo get_site_url();?>/secretaria">Secretaría</a></li>
-					<li><a href="<?php echo get_site_url();?>/proyecto-funcional">Proyecto Funcional</a></li>
-					<li><a href="<?php echo get_site_url();?>/contacto">Contacto</a></li>
-				</ul>
+				<div class="col col-12 col-lg-3">
+					<h5>Información</h5>
+					<ul class="menu">
+						<li><a href="<?php echo get_site_url();?>/politica-de-privacidad">Política de privacidad</a></li>
+						<li><a href="<?php echo get_site_url();?>/aviso-legal">Aviso Legal</a></li>
+						<li><a href="<?php echo get_site_url();?>/politica-de-cookies">Política de cookies</a></li>
+						<li><a href="<?php echo get_site_url();?>/secretaria">Secretaría</a></li>
+						<li><a href="<?php echo get_site_url();?>/proyecto-funcional">Proyecto Funcional</a></li>
+						<li><a href="<?php echo get_site_url();?>/contacto">Contacto</a></li>
+					</ul>
+				</div>
+
+				<div class="col col-12 col-lg-5">
+					<h5>Oferta formativa</h5>
+					<ul class="menu">
+						<li><a href="<?php echo get_site_url();?>/departamento-de-administracion-y-finanzas">Administración y Finanzas</a></li>
+						<li><a href="<?php echo get_site_url();?>/departamento-de-comercio-y-marketing">Comercio y Marketing</a></li>
+						<li><a href="<?php echo get_site_url();?>/departamento-de-electricidad-y-electronica">Electricidad y Electrónica</a></li>
+						<li><a href="<?php echo get_site_url();?>/departamento-de-mantenimiento-y-servicios-a-la-produccion">Mantenimiento y Servicios a la producción</a></li>
+						<li><a href="<?php echo get_site_url();?>/departamento-de-sanidad">Sanidad</a></li>
+						<li><a href="<?php echo get_site_url();?>/aula-emprendimiento">Aula de Emprendimiento</a></li>
+					</ul>
+				</div>
 			</div>
-
-			<div class="col col-12 col-lg-4">
-				<h5>Oferta formativa</h5>
-				<ul class="menu">
-					<li><a href="<?php echo get_site_url();?>/departamento-de-administracion-y-finanzas">Administración y Finanzas</a></li>
-					<li><a href="<?php echo get_site_url();?>/departamento-de-comercio-y-marketing">Comercio y Marketing</a></li>
-					<li><a href="<?php echo get_site_url();?>/departamento-de-electricidad-y-electronica">Electricidad y Electrónica</a></li>
-					<li><a href="<?php echo get_site_url();?>/departamento-de-mantenimiento-y-servicios-a-la-produccion">Mantenimiento y Servicios a la producción</a></li>
-					<li><a href="<?php echo get_site_url();?>/departamento-de-sanidad">Sanidad</a></li>
-					<li><a href="<?php echo get_site_url();?>/aula-emprendimiento">Aula de Emprendimiento</a></li>
-				</ul>
-			</div>
-
-		</div><!-- row end -->
+		</footer><!-- row end -->
 
 	</div><!-- container end -->
 

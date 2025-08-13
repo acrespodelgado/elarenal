@@ -10,7 +10,7 @@ h1 {
 
 h3 {
     font-size: 33px;
-    font-weight: bold;
+    font-weight: 600;
     color: $primary;
 }
 
@@ -24,6 +24,10 @@ p {
     font-size: 14px;
     font-weight: 400;
     color: $primary;
+}
+
+.border-accent {
+    border-color: $accent !important;
 }
 
 .accent {

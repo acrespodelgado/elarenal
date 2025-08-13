@@ -16252,7 +16252,7 @@ h1, .h1 {
 
 h3, .h3 {
   font-size: 33px;
-  font-weight: bold;
+  font-weight: 600;
   color: #002562;
 }
 
@@ -16266,6 +16266,10 @@ p {
   font-size: 14px;
   font-weight: 400;
   color: #002562;
+}
+
+.border-accent {
+  border-color: #FF8000 !important;
 }
 
 .accent {
@@ -16449,10 +16453,6 @@ a:hover {
 #wrapper-footer .site-footer .footer-logo {
   margin-bottom: 2rem;
 }
-#wrapper-footer .site-footer .footer-logo img {
-  max-width: 138px;
-  height: auto;
-}
 #wrapper-footer .site-footer .footer-social {
   margin-bottom: 2rem;
 }
@@ -16463,7 +16463,7 @@ a:hover {
   padding: 0;
 }
 #wrapper-footer .site-footer .footer-social ul li a, #wrapper-footer .site-footer .footer-social ul li i {
-  font-size: 24px;
+  font-size: 32px;
   color: #FF8000;
 }
 #wrapper-footer .site-footer .footer-info {
@@ -16545,8 +16545,7 @@ a:hover {
 }
 
 #main-nav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 15px;
   margin-top: 30px;
   transition: all 0.3s ease-in;
   background: white;
@@ -17707,6 +17706,193 @@ a:hover {
 #solicitud-alumnos-fct ul li {
   color: #002562;
   font-size: 16px;
+}
+
+#orientacion-antes-titular .pre-title,
+#orientacion-durante-titular .pre-title,
+#orientacion-despues-titular .pre-title {
+  color: #002562;
+  font-size: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  line-height: 0.9;
+}
+#orientacion-antes-titular h2, #orientacion-antes-titular .h2,
+#orientacion-durante-titular h2,
+#orientacion-durante-titular .h2,
+#orientacion-despues-titular h2,
+#orientacion-despues-titular .h2 {
+  color: #002562;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.33;
+  margin: 1.5rem 0;
+}
+@media (max-width: 767px) {
+  #orientacion-antes-titular h2, #orientacion-antes-titular .h2,
+  #orientacion-durante-titular h2,
+  #orientacion-durante-titular .h2,
+  #orientacion-despues-titular h2,
+  #orientacion-despues-titular .h2 {
+    font-size: 24px;
+  }
+}
+
+#orientacion-antes-contenido .banner,
+#orientacion-durante-contenido .banner,
+#orientacion-despues-contenido .banner {
+  height: 800px;
+}
+#orientacion-antes-contenido .banner .primary-background,
+#orientacion-durante-contenido .banner .primary-background,
+#orientacion-despues-contenido .banner .primary-background {
+  background-color: #002562;
+  background-image: url("http://el-arenal.local/img/fondo_oferta_educativa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#orientacion-antes-contenido .banner .primary-background .p-content,
+#orientacion-durante-contenido .banner .primary-background .p-content,
+#orientacion-despues-contenido .banner .primary-background .p-content {
+  width: 80%;
+}
+#orientacion-antes-contenido .banner .primary-background h3, #orientacion-antes-contenido .banner .primary-background .h3,
+#orientacion-durante-contenido .banner .primary-background h3,
+#orientacion-durante-contenido .banner .primary-background .h3,
+#orientacion-despues-contenido .banner .primary-background h3,
+#orientacion-despues-contenido .banner .primary-background .h3 {
+  color: #FF8000;
+  margin-bottom: 1.5rem;
+}
+#orientacion-antes-contenido .banner .primary-background p,
+#orientacion-durante-contenido .banner .primary-background p,
+#orientacion-despues-contenido .banner .primary-background p {
+  color: white;
+  font-size: 18px;
+}
+#orientacion-antes-contenido .banner .img-background,
+#orientacion-durante-contenido .banner .img-background,
+#orientacion-despues-contenido .banner .img-background {
+  background-color: #E6F4FF;
+  height: 100%;
+}
+#orientacion-antes-contenido .banner .img-background img,
+#orientacion-durante-contenido .banner .img-background img,
+#orientacion-despues-contenido .banner .img-background img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  #orientacion-antes-contenido .banner,
+  #orientacion-durante-contenido .banner,
+  #orientacion-despues-contenido .banner {
+    height: auto;
+  }
+  #orientacion-antes-contenido .banner .primary-background,
+  #orientacion-durante-contenido .banner .primary-background,
+  #orientacion-despues-contenido .banner .primary-background {
+    padding: 3rem 0;
+  }
+  #orientacion-antes-contenido .banner .primary-background .p-content,
+  #orientacion-durante-contenido .banner .primary-background .p-content,
+  #orientacion-despues-contenido .banner .primary-background .p-content {
+    padding: 0 15px;
+    width: 100%;
+  }
+  #orientacion-antes-contenido .banner .primary-background h3, #orientacion-antes-contenido .banner .primary-background .h3,
+  #orientacion-durante-contenido .banner .primary-background h3,
+  #orientacion-durante-contenido .banner .primary-background .h3,
+  #orientacion-despues-contenido .banner .primary-background h3,
+  #orientacion-despues-contenido .banner .primary-background .h3 {
+    font-size: 24px;
+  }
+  #orientacion-antes-contenido .banner .primary-background p:last-child,
+  #orientacion-durante-contenido .banner .primary-background p:last-child,
+  #orientacion-despues-contenido .banner .primary-background p:last-child {
+    margin-bottom: 0;
+  }
+  #orientacion-antes-contenido .banner .d-flex .btn, #orientacion-antes-contenido .banner .d-flex .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #orientacion-antes-contenido .banner .d-flex a.button, #orientacion-antes-contenido .banner .d-flex .woocommerce-info a.button, .woocommerce-info #orientacion-antes-contenido .banner .d-flex a.button, #orientacion-antes-contenido .banner .d-flex .wpcf7 input[type=submit], .wpcf7 #orientacion-antes-contenido .banner .d-flex input[type=submit],
+  #orientacion-durante-contenido .banner .d-flex .btn,
+  #orientacion-durante-contenido .banner .d-flex .woocommerce-notices-wrapper .woocommerce-message a.button,
+  .woocommerce-notices-wrapper .woocommerce-message #orientacion-durante-contenido .banner .d-flex a.button,
+  #orientacion-durante-contenido .banner .d-flex .woocommerce-info a.button,
+  .woocommerce-info #orientacion-durante-contenido .banner .d-flex a.button,
+  #orientacion-durante-contenido .banner .d-flex .wpcf7 input[type=submit],
+  .wpcf7 #orientacion-durante-contenido .banner .d-flex input[type=submit],
+  #orientacion-despues-contenido .banner .d-flex .btn,
+  #orientacion-despues-contenido .banner .d-flex .woocommerce-notices-wrapper .woocommerce-message a.button,
+  .woocommerce-notices-wrapper .woocommerce-message #orientacion-despues-contenido .banner .d-flex a.button,
+  #orientacion-despues-contenido .banner .d-flex .woocommerce-info a.button,
+  .woocommerce-info #orientacion-despues-contenido .banner .d-flex a.button,
+  #orientacion-despues-contenido .banner .d-flex .wpcf7 input[type=submit],
+  .wpcf7 #orientacion-despues-contenido .banner .d-flex input[type=submit] {
+    font-size: 14px;
+  }
+}
+
+#orientacion-antes-contenido .col-grado {
+  background: #002562;
+  padding: 3rem 0;
+}
+#orientacion-antes-contenido .col-grado h4, #orientacion-antes-contenido .col-grado .h4, #orientacion-antes-contenido .col-grado p, #orientacion-antes-contenido .col-grado a {
+  color: white;
+}
+#orientacion-antes-contenido .col-grado p:last-child {
+  margin-bottom: 0;
+}
+#orientacion-antes-contenido .col-grado h4, #orientacion-antes-contenido .col-grado .h4 {
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 1.33;
+  margin-bottom: 1.5rem;
+}
+#orientacion-antes-contenido .col-grado li {
+  margin-bottom: 1rem;
+}
+#orientacion-antes-contenido .col-grado li a {
+  text-decoration: none;
+}
+#orientacion-antes-contenido .col-grado .border-accent {
+  border-top: 3px solid;
+  opacity: 1;
+}
+@media (max-width: 767px) {
+  #orientacion-antes-contenido .col-grado {
+    padding: 2rem 0;
+  }
+  #orientacion-antes-contenido .col-grado h4, #orientacion-antes-contenido .col-grado .h4 {
+    font-size: 24px;
+  }
+}
+
+#orientacion-durante-contenido .big-href {
+  color: #002562;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+#orientacion-despues-contenido h3, #orientacion-despues-contenido .h3, #orientacion-despues-contenido h4, #orientacion-despues-contenido .h4, #orientacion-despues-contenido h5, #orientacion-despues-contenido .h5, #orientacion-despues-contenido h6, #orientacion-despues-contenido .h6, #orientacion-despues-contenido h7, #orientacion-despues-contenido h8 {
+  display: block;
+  color: #002562;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 3rem 0 1.5rem 0;
+}
+#orientacion-despues-contenido .btn, #orientacion-despues-contenido .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-notices-wrapper .woocommerce-message #orientacion-despues-contenido a.button, #orientacion-despues-contenido .woocommerce-info a.button, .woocommerce-info #orientacion-despues-contenido a.button, #orientacion-despues-contenido .wpcf7 input[type=submit], .wpcf7 #orientacion-despues-contenido input[type=submit] {
+  margin: 1.5rem 0;
+}
+@media (max-width: 767px) {
+  #orientacion-despues-contenido .banner .primary-background h3, #orientacion-despues-contenido .banner .primary-background .h3 {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=child-theme.css.map */

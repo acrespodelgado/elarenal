@@ -76,11 +76,6 @@
 
         .footer-logo {
             margin-bottom: 2rem;
-            
-            img {
-                max-width: 138px;
-                height: auto;
-            }
         }
 
         .footer-social {
@@ -95,7 +90,7 @@
                 li {
 
                     a, i {
-                        font-size: 24px;
+                        font-size: 32px;
                         color: $accent;
                     }
                 }

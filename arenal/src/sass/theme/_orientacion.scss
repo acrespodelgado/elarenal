@@ -1,0 +1,189 @@
+#orientacion-antes-titular,
+#orientacion-durante-titular,
+#orientacion-despues-titular {
+    
+    .pre-title {
+        color: $primary;
+        font-size: 26px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        line-height: 0.9;
+    }
+
+    h2 {
+        color: $primary;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.33;
+        margin: 1.5rem 0;
+    }
+
+    @media (max-width: 767px) {
+
+        h2 {
+            font-size: 24px;
+        }
+    }
+}
+
+#orientacion-antes-contenido,
+#orientacion-durante-contenido,
+#orientacion-despues-contenido {
+
+    .banner {
+        height: 800px;
+
+        .primary-background {
+            background-color: $primary;
+            background-image: url('http://el-arenal.local/img/fondo_oferta_educativa.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            height: 100%;
+    
+            .p-content {
+                width: 80%;
+            }
+    
+            h3 {
+                color: $accent;
+                margin-bottom: 1.5rem;
+            }
+    
+            p {
+                color: white;
+                font-size: 18px;
+            }
+        }
+    
+        .img-background {
+            background-color: #E6F4FF;
+            height: 100%;
+            
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        .banner {
+            height: auto;
+
+            .primary-background {
+                padding: 3rem 0;
+                
+                .p-content {
+                    padding: 0 15px;
+                    width: 100%;
+                }
+                
+                h3 {
+                    font-size: 24px;
+                }
+
+                p:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .d-flex {
+
+                .btn {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+#orientacion-antes-contenido {
+
+    .col-grado {
+        background: $primary;
+        padding: 3rem 0;
+
+        h4, p, a {
+            color: white;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        h4 {
+            font-size: 33px;
+            font-weight: 700;
+            line-height: 1.33;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .border-accent {
+            border-top: 3px solid;
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 767px) {
+        
+        .col-grado {
+            padding: 2rem 0;
+
+            h4 {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+#orientacion-durante-contenido {
+
+    .big-href {
+        color: $primary;
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: -1px;
+    }
+}
+
+#orientacion-despues-contenido {
+
+    h3, h4, h5, h6, h7, h8 {
+        display: block;
+        color: $primary;
+        font-size: 40px;
+        font-weight: 700;
+        margin: 3rem 0 1.5rem 0;
+    }
+
+    .btn {
+        margin: 1.5rem 0;
+    }
+
+    @media (max-width: 767px) {
+
+        .banner {
+
+            .primary-background {
+
+                h3 {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}

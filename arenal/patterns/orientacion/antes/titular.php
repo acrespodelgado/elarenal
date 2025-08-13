@@ -1,8 +1,8 @@
-<div id="orientacion-antes-titular" class="mb-5">
+<div id="orientacion-antes-titular" class="my-5">
     <div class="container p-sm-20">
         <div class="row">
             <div class="col col-12">
-                <span>Antes</span>
+                <span class="pre-title">Antes</span>
                 <h1>¿Necesitas <span class="accent">ayuda?</span></h1>
                 <h2>Te informamos y asesoramos sobre todo lo relacionado con la
                 FORMACIÓN PROFESIONAL.</h2>
@@ -12,3 +12,4 @@
             </div>
         </div>
     </div>
+</div>
