@@ -36,7 +36,7 @@
 
         .primary-background {
             background-color: $primary;
-            background-image: url('http://el-arenal.local/img/fondo_oferta_educativa.png');
+            background-image: url('#{$images-path}/fondo_oferta_educativa.png');
             background-repeat: no-repeat;
             background-size: cover;
             color: white;

@@ -16290,7 +16290,10 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-#full-width-page-wrapper {
+#full-width-page-wrapper,
+#search-wrapper,
+#page-wrapper,
+#single-wrapper-noticia {
   padding: 0;
   margin-top: 150px;
 }
@@ -16581,21 +16584,52 @@ a:hover {
       }
   }
   */
+  /* Icono búsqueda */
 }
 #main-nav #main-menu {
   gap: 1rem;
 }
 #main-nav #main-menu a {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 500;
   color: #002562;
 }
 #main-nav #main-menu .menu-item-has-children a::after {
   border-top-color: #FF8000;
 }
+#main-nav .search {
+  position: relative;
+}
+#main-nav .search::before {
+  font-family: "FontAwesome";
+  color: #002562;
+  content: "\f002"; /* Ícono de lupa en FA4 */
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 0;
+  cursor: pointer;
+}
+#main-nav .search a.nav-link {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 @media (max-width: 767px) {
   #main-nav {
     margin-top: 24px;
+  }
+  #main-nav .search::before {
+    display: none;
+  }
+  #main-nav .search a.nav-link {
+    opacity: 1;
+    position: relative;
+  }
+}
+@media (min-width: 768px) {
+  #main-nav #main-menu a {
+    font-size: 13px;
   }
 }
 
@@ -16706,7 +16740,7 @@ a:hover {
 }
 
 #quienes-somos {
-  background: url("http://el-arenal.local/img/fondo_quienes_somos.png");
+  background: url("/img/fondo_quienes_somos.png");
   background-size: auto;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -16979,7 +17013,7 @@ a:hover {
 }
 
 #opiniones {
-  background: url("http://el-arenal.local/img/fondo_opiniones.png");
+  background: url("/img/fondo_opiniones.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 0 3rem 0;
@@ -17131,7 +17165,7 @@ a:hover {
   color: white;
 }
 .oferta-contenido .background {
-  background: url("http://el-arenal.local/img/fondo_oferta_educativa.png");
+  background: url("/img/fondo_oferta_educativa.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -17158,10 +17192,16 @@ a:hover {
   font-size: 25px;
   margin-bottom: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .oferta-contenido {
     height: auto;
   }
+  .oferta-contenido .img-fluid.object-fit-cover {
+    height: auto !important;
+    max-height: 600px;
+  }
+}
+@media (max-width: 767px) {
   .oferta-contenido h4, .oferta-contenido .h4 {
     font-size: 20px;
   }
@@ -17179,7 +17219,7 @@ a:hover {
     font-size: 18px;
   }
   .oferta-contenido .img-fluid.object-fit-cover {
-    height: auto !important;
+    max-height: 400px;
   }
 }
 
@@ -17790,7 +17830,7 @@ a:hover {
 #orientacion-durante-contenido .banner .primary-background,
 #orientacion-despues-contenido .banner .primary-background {
   background-color: #002562;
-  background-image: url("http://el-arenal.local/img/fondo_oferta_educativa.png");
+  background-image: url("/img/fondo_oferta_educativa.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -17935,6 +17975,14 @@ a:hover {
   #orientacion-despues-contenido .banner .primary-background h3, #orientacion-despues-contenido .banner .primary-background .h3 {
     margin-top: 0;
   }
+}
+
+#search-wrapper .entry-summary .btn-secondary {
+  background: #002562;
+  color: #fff;
+}
+#search-wrapper .pagination {
+  margin-top: 3rem;
 }
 
 /*# sourceMappingURL=child-theme.css.map */

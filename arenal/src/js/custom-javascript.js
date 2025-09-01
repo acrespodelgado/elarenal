@@ -45,8 +45,6 @@ jQuery(document).ready(function($) {
         });
     }
 
-    handleFAQs();
-
     // Función para cambiar la sección visible en la oferta educativa
     function carouselOferta() {
         const buttons = document.querySelectorAll('[data-target]');
@@ -71,5 +69,27 @@ jQuery(document).ready(function($) {
         });
     }
 
+    
+
+    function handleHamburgerMenu() {
+        var $hamburger = $(".hamburger");
+        var $navbar = $('#main-nav');
+
+        $hamburger.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+
+            if ($hamburger.hasClass("is-active")) {
+                $('#myNav').css("width", "100%");
+                $('body').css('overflow', 'hidden');
+                $navbar.removeClass('transparent');
+            } else {
+                $('#myNav').css("width", "0%");
+                $('body').css('overflow', 'auto');
+            }
+        });
+    }
+
+    handleFAQs();
+    handleHamburgerMenu();
     carouselOferta();
 });

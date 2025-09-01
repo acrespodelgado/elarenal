@@ -1,3 +1,5 @@
+$images-path: '/img';
+
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -49,7 +51,10 @@ a {
     }
 }
 
-#full-width-page-wrapper {
+#full-width-page-wrapper,
+#search-wrapper,
+#page-wrapper,
+#single-wrapper-noticia {
     padding: 0;
     margin-top: 150px;
 }

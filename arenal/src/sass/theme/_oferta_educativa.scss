@@ -5,7 +5,7 @@
     color: white;
 
     .background {
-        background: url('http://el-arenal.local/img/fondo_oferta_educativa.png');
+        background: url('#{$images-path}/fondo_oferta_educativa.png');
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -44,8 +44,16 @@
         }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 1200px) {
         height: auto;
+
+        .img-fluid.object-fit-cover {
+            height: auto !important;
+            max-height: 600px;
+        }
+    }
+
+    @media (max-width: 767px) {
 
         h4 {
             font-size: 20px;
@@ -74,7 +82,7 @@
         }
 
         .img-fluid.object-fit-cover {
-            height: auto !important;
+            max-height: 400px;
         }
     }
 }
