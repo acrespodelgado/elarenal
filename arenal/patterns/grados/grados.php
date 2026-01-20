@@ -5,6 +5,23 @@
                 <div class="row">
                 <?php 
                     $tipo_grado = str_replace('grados-', '', get_post_field( 'post_name', get_post()));
+                    $slug = str_replace('grados-', '', get_post_field( 'post_name', get_post()));
+
+                    if (stripos($slug, 'cfgb') !== false) :
+                        $tipo_grado = 'basico';
+                    elseif (stripos($slug, 'cfgm') !== false) :
+                        $tipo_grado = 'medio';
+                    elseif (stripos($slug, 'cfgs') !== false) :
+                        $tipo_grado = 'superior';
+                    elseif (stripos($slug, 'certificados') !== false) :
+                        $tipo_grado = 'certificado-profesional';
+                    elseif (stripos($slug, 'master') !== false || stripos($slug, 'máster') !== false) :
+                        $tipo_grado = 'curso-especializacion';
+                    elseif (stripos($slug, 'acreditaciones') !== false || stripos($slug, 'competencias') !== false) :
+                        $tipo_grado = 'competencias-profesionales';
+                    else :
+                        $tipo_grado = $slug;
+                    endif;
 
                     global $paged;
                     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -17,7 +34,7 @@
                         'meta_query' => array(
                             array(
                                 'key' => 'tipo_grado',
-                                'value' => $tipo_grado, // "basico", "medio", etc.
+                                'value' => $tipo_grado,
                                 'compare' => '='
                             )
                         )

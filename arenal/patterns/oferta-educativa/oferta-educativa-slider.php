@@ -26,8 +26,8 @@
                 if ( strpos($uri, 'presentacion') !== false ) : ?>
                     <h3><span class="accent">Actualmente,</span> nuestra oferta formativa es:</h3>
                 <?php else: ?>
-                    <h3>Nuestra <span class="accent">oferta educativa</span></h3>
-                    <p>Elige tu rama profesional para ver nuestra oferta educativa completa</p>
+                    <h3>Nuestra <span class="accent">oferta</span></h3>
+                    <p>Elige tu rama profesional para ver nuestra oferta completa</p>
                 <?php endif; ?>
             </div>
         </div>

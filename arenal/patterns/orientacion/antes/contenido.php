@@ -12,12 +12,12 @@
             </div>
 
             <div class="col-12 col-lg-6 img-background">
-                <img src="<?php echo get_site_url(); ?>/img/orientacion_antes_right.png" alt="Orientación antes" class="img-fluid w-100 h-100 object-fit-cover">
+                <a href="#oferta"><img src="<?php echo get_site_url(); ?>/img/orientacion_antes_right.png" alt="Orientación antes" class="img-fluid w-100 h-100 object-fit-cover"></a>
             </div>
         </div>
     </div>
 
-    <div class="container my-5">
+    <div class="container my-5" id="oferta">
         <div class="row">
             <div class="col-12 text-center">
                 <h1>Accede a <span class="accent">nuestra oferta</h1>
@@ -108,7 +108,7 @@
             <div class="col-12">
                 <div class="d-flex justify-content-center align-items-center gap-3">
                     <a href="https://www.juntadeandalucia.es/secretariavirtual/consultas/#FORM_PROF" target="_blank" rel="nofollow" class="btn btn-accent">OFERTA CICLOS EDUCATIVOS ANDALUCÍA <i class="fa fa-long-arrow-right"></i></a>
-                    <a href="https://www.juntadeandalucia.es/educacion/portales/web/formacion-profesional-andaluza/orientacion" target="_blank" rel="nofollow" class="btn btn-accent">TODO SOBRE FP <i class="fa fa-long-arrow-right"></i></a>
+                    <a href="https://www.todofp.es/inicio.html" target="_blank" rel="nofollow" class="btn btn-accent">TODO SOBRE FP <i class="fa fa-long-arrow-right"></i></a>
                 </div>
             </div>
         </div>

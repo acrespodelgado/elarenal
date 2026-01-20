@@ -52,9 +52,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<li><a href="<?php echo get_site_url();?>/politica-de-privacidad">Política de privacidad</a></li>
 						<li><a href="<?php echo get_site_url();?>/aviso-legal">Aviso Legal</a></li>
 						<li><a href="<?php echo get_site_url();?>/politica-de-cookies">Política de cookies</a></li>
+						<li><a href="<?php echo get_site_url();?>/#">Políticas de calidad</a></li>
+						<li><a href="<?php echo get_site_url();?>/#">Requisitos de proveedores</a></li>
 						<li><a href="<?php echo get_site_url();?>/secretaria">Secretaría</a></li>
 						<li><a href="<?php echo get_site_url();?>/proyecto-funcional">Proyecto Funcional</a></li>
-						<li><a href="<?php echo get_site_url();?>/contacto">Contacto</a></li>
 					</ul>
 				</div>
 
@@ -67,6 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<li><a href="<?php echo get_site_url();?>/departamento-de-mantenimiento-y-servicios-a-la-produccion">Mantenimiento y Servicios a la producción</a></li>
 						<li><a href="<?php echo get_site_url();?>/departamento-de-sanidad">Sanidad</a></li>
 						<li><a href="<?php echo get_site_url();?>/aula-emprendimiento">Aula de Emprendimiento</a></li>
+						<li><a href="<?php echo get_site_url();?>/contacto">Contacto</a></li>
 					</ul>
 				</div>
 			</div>

@@ -12,12 +12,12 @@
             </div>
 
             <div class="col-12 col-lg-6 img-background">
-                <img src="<?php echo get_site_url(); ?>/img/orientacion_durante_right.png" alt="Orientación durante" class="img-fluid w-100 h-100 object-fit-cover">
+                <a href="#emprendimiento"><img src="<?php echo get_site_url(); ?>/img/orientacion_durante_right.png" alt="Orientación durante" class="img-fluid w-100 h-100 object-fit-cover"></a>
             </div>
         </div>
     </div>
 
-    <div class="container my-5">
+    <div class="container my-5" id="emprendimiento">
         <div class="row">
             <div class="col-12 text-center">
                 <h1>EMPRENDIMIENTO</h1>

@@ -4,6 +4,7 @@
             <div class="col col-12">
                 <span class="pre-title">Antes</span>
                 <h1>¿Necesitas <span class="accent">ayuda?</span></h1>
+                <p>Plantéate qué es lo que quieres, busca información… qué puedo hacer, dónde lo puedo realizar, cuál sería mi itinerario…</p>
                 <h2>Te informamos y asesoramos sobre todo lo relacionado con la
                 FORMACIÓN PROFESIONAL.</h2>
                 <p>Te asesoramos e informamos en la elección de tu itinerario formativo y/o profesional: ciclos formativos, acceso a la Universidad, competencias profesionales, certificados de profesionalidad, acreditación de competencias….., que mejor se adapte a tus circunstancias personales, ajustandose a tus expectativas y preferencias e identificando metas profesionales.</p>

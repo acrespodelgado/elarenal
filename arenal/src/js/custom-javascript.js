@@ -69,7 +69,25 @@ jQuery(document).ready(function($) {
         });
     }
 
-    
+    // Smooth scroll para enlaces locales (href="#id")
+    function handleLocalNavSmoothScroll() {
+        // Excluir enlaces con href="#" vacíos
+        $('a[href^="#"]:not([href="#"])').on('click', function(e) {
+            var targetId = this.getAttribute('href');
+            var $target = $(targetId);
+
+            if ($target.length) {
+                e.preventDefault();
+                var offset = $target.offset().top;
+
+                // Animar el scroll
+                $('html, body').animate({ scrollTop: offset }, 600, function() {
+                    // Enfocar el destino por accesibilidad
+                    $target.attr('tabindex', '-1').focus();
+                });
+            }
+        });
+    }
 
     function handleHamburgerMenu() {
         var $hamburger = $(".hamburger");
@@ -91,5 +109,6 @@ jQuery(document).ready(function($) {
 
     handleFAQs();
     handleHamburgerMenu();
+    handleLocalNavSmoothScroll();
     carouselOferta();
 });

@@ -32,7 +32,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 			<div class="col-md-12 content-area" id="primary">
 
 				<main class="site-main" id="main" role="main">
-
+					<?php include get_stylesheet_directory() . '/patterns/orientacion/durante/pretitular.php'; ?>
 					<?php echo do_shortcode('[smartslider3 slider="13"]'); ?>
 					<?php include get_stylesheet_directory() . '/patterns/orientacion/durante/titular.php'; ?>
 					<?php include get_stylesheet_directory() . '/patterns/orientacion/durante/contenido.php'; ?>

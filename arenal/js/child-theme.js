@@ -1,6 +1,6 @@
 /*!
   * Understrap v1.2.0 (https://understrap.com)
-  * Copyright 2013-2025 The Understrap Authors (https://github.com/understrap/understrap/graphs/contributors)
+  * Copyright 2013-2026 The Understrap Authors (https://github.com/understrap/understrap/graphs/contributors)
   * Licensed under GPL-3.0 (undefined)
   */
 (function (global, factory) {
@@ -6804,6 +6804,27 @@
 	      });
 	    });
 	  }
+
+	  // Smooth scroll para enlaces locales (href="#id")
+	  function handleLocalNavSmoothScroll() {
+	    // Excluir enlaces con href="#" vacíos
+	    $('a[href^="#"]:not([href="#"])').on('click', function (e) {
+	      var targetId = this.getAttribute('href');
+	      var $target = $(targetId);
+	      if ($target.length) {
+	        e.preventDefault();
+	        var offset = $target.offset().top;
+
+	        // Animar el scroll
+	        $('html, body').animate({
+	          scrollTop: offset
+	        }, 600, function () {
+	          // Enfocar el destino por accesibilidad
+	          $target.attr('tabindex', '-1').focus();
+	        });
+	      }
+	    });
+	  }
 	  function handleHamburgerMenu() {
 	    var $hamburger = $(".hamburger");
 	    var $navbar = $('#main-nav');
@@ -6821,6 +6842,7 @@
 	  }
 	  handleFAQs();
 	  handleHamburgerMenu();
+	  handleLocalNavSmoothScroll();
 	  carouselOferta();
 	});
 

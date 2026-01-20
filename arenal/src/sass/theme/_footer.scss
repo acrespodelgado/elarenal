@@ -69,13 +69,16 @@
     
         .menu {
             a {
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 22px;
             }
         }
 
         .footer-logo {
-            margin-bottom: 2rem;
+
+            img {
+                max-width: 80%;
+            }
         }
 
         .footer-social {
@@ -98,7 +101,6 @@
         }
 
         .footer-info {
-            margin-bottom: 2rem;
 
             p, a {
                 color: white;

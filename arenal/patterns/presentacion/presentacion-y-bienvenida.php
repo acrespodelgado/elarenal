@@ -2,7 +2,7 @@
     <div class="container mb-5 p-sm-20">
         <div class="row">
             <div class="col-12">
-                <h1>Presentación y bienvenida</h1>
+                <h1>¿Quiénes somos?</h1>
                 <p>El actual CPIFP El Arenal inició su andadura como Escuela de Aprendizaje Industrial el curso 1969/70. El número de alumnos de ese curso fue de 57, repartidos entre las tres Ramas de Aprendizaje que existían entonces y que aún hoy coexisten: Metal, Electricidad y Delineación.
 </p>
             </div>

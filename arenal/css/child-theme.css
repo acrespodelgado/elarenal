@@ -16471,11 +16471,11 @@ a:hover {
   font-size: 32px;
 }
 #wrapper-footer .site-footer .menu a {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
 }
-#wrapper-footer .site-footer .footer-logo {
-  margin-bottom: 2rem;
+#wrapper-footer .site-footer .footer-logo img {
+  max-width: 80%;
 }
 #wrapper-footer .site-footer .footer-social {
   margin-bottom: 2rem;
@@ -16489,9 +16489,6 @@ a:hover {
 #wrapper-footer .site-footer .footer-social ul li a, #wrapper-footer .site-footer .footer-social ul li i {
   font-size: 32px;
   color: #FF8000;
-}
-#wrapper-footer .site-footer .footer-info {
-  margin-bottom: 2rem;
 }
 #wrapper-footer .site-footer .footer-info p, #wrapper-footer .site-footer .footer-info a {
   color: white;
@@ -17228,7 +17225,7 @@ a:hover {
 }
 #oferta-educativa-grado p, #oferta-educativa-grado li {
   color: #002562;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.2;
 }
 #oferta-educativa-grado li {
@@ -17239,12 +17236,12 @@ a:hover {
 }
 @media (max-width: 767px) {
   #oferta-educativa-grado p, #oferta-educativa-grado li {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 #oferta-educativa-grado #oferta-grado-portada span {
   color: #002562;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 500;
 }
 #oferta-educativa-grado #oferta-grado-portada span.accent {
@@ -17258,7 +17255,7 @@ a:hover {
   margin: 1.5rem 0;
 }
 #oferta-educativa-grado #oferta-grado-portada .big p {
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 400;
 }
 #oferta-educativa-grado #oferta-grado-portada i {
@@ -17267,13 +17264,13 @@ a:hover {
 }
 @media (max-width: 767px) {
   #oferta-educativa-grado #oferta-grado-portada span {
-    font-size: 22px;
+    font-size: 18px;
   }
   #oferta-educativa-grado #oferta-grado-portada p {
     font-size: 14px;
   }
   #oferta-educativa-grado #oferta-grado-portada .big p {
-    font-size: 18px;
+    font-size: 16px;
   }
   #oferta-educativa-grado #oferta-grado-portada i {
     font-size: 48px;
@@ -17340,7 +17337,7 @@ a:hover {
 }
 #oferta-educativa-grado #oferta-grados-modulos .light-background .modulo-item p {
   color: #002562;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
 }
 #oferta-educativa-grado #oferta-grados-modulos .light-background .modulo-item p.numero {
@@ -17351,7 +17348,7 @@ a:hover {
 }
 @media (max-width: 767px) {
   #oferta-educativa-grado #oferta-grados-modulos .light-background .modulo-item p {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 #oferta-educativa-grado #oferta-grados-niveles,
@@ -17416,7 +17413,7 @@ a:hover {
   #oferta-educativa-grado #oferta-grados-niveles .carnes .col-background p,
   #oferta-educativa-grado #oferta-grados-carnes .niveles .col-background p,
   #oferta-educativa-grado #oferta-grados-carnes .carnes .col-background p {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
