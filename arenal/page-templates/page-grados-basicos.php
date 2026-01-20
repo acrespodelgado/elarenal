@@ -43,7 +43,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 				</div>	
                 <?php include get_stylesheet_directory() . '/patterns/opiniones/opiniones.php'; ?>
                 <?php include get_stylesheet_directory() . '/patterns/formularios/formulario.php'; ?>
-                <?php include get_stylesheet_directory() . '/patterns/noticia/noticias-actualidad.php'; ?>
+                <?php include get_stylesheet_directory() . '/patterns/noticia/noticias-grados.php'; ?>
 
 				</main>
 
