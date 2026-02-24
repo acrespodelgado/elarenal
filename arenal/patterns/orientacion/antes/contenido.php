@@ -72,8 +72,10 @@
                                 <ul class="list-unstyled">
                                     <?php while($query->have_posts()) : $query->the_post(); ?>
                                         <li>
-                                            <img src="<?php echo get_site_url(); ?>/img/adorno_oferta_educativa.png" alt="Adorno" class="me-4">
-                                            <a href="<?php echo get_site_url() . '/' . sanitize_title(get_the_title()); ?>"><?php echo get_the_title(); ?></a>
+                                            <p class="d-flex align-items-center gap-1">
+                                                <img src="<?php echo get_site_url(); ?>/img/adorno_oferta_educativa.png" alt="Adorno" class="me-2" style="width:30px; height:auto; object-fit:contain;">
+                                                <a href="<?php echo get_site_url() . '/' . sanitize_title(get_the_title()); ?>"><?php echo get_the_title(); ?></a>
+                                            </p>
                                         </li>
                                     <?php endwhile; ?>
                                 </ul>

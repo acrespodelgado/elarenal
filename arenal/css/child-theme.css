@@ -16324,6 +16324,11 @@ a:hover {
   }
 }
 
+.decorator {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
 .btn, .woocommerce-notices-wrapper .woocommerce-message a.button, .woocommerce-info a.button, .wpcf7 input[type=submit] {
   padding: 5px 25px;
   border-radius: 12px;
@@ -16566,7 +16571,7 @@ a:hover {
 }
 
 #main-nav {
-  padding: 1rem 15px;
+  padding: 1rem 24px;
   margin-top: 30px;
   transition: all 0.3s ease-in;
   background: white;
@@ -16623,6 +16628,9 @@ a:hover {
     opacity: 1;
     position: relative;
   }
+  #main-nav #main-menu {
+    gap: 0.5rem;
+  }
 }
 @media (min-width: 768px) {
   #main-nav #main-menu a {
@@ -16635,7 +16643,7 @@ a:hover {
 */
 @media (max-width: 767px) {
   #navbarNavDropdown {
-    padding: 3rem 0;
+    padding: 0;
   }
   #navbarNavDropdown.collapse {
     height: 100vh;
@@ -16712,6 +16720,10 @@ a:hover {
     font-size: 16px;
     padding: 5px 15px;
   }
+}
+
+#video-promocional h3, #video-promocional .h3 {
+  margin-bottom: 20px;
 }
 
 #noticia-background {
@@ -17147,10 +17159,6 @@ a:hover {
 #proyecto-funcional h4, #proyecto-funcional .h4 {
   margin: 1.5rem 0;
 }
-#proyecto-funcional span {
-  display: block;
-  margin-bottom: 15px;
-}
 #proyecto-funcional .btn i, #proyecto-funcional .woocommerce-notices-wrapper .woocommerce-message a.button i, .woocommerce-notices-wrapper .woocommerce-message #proyecto-funcional a.button i, #proyecto-funcional .woocommerce-info a.button i, .woocommerce-info #proyecto-funcional a.button i, #proyecto-funcional .wpcf7 input[type=submit] i, .wpcf7 #proyecto-funcional input[type=submit] i {
   margin-left: 15px;
 }
@@ -17220,6 +17228,9 @@ a:hover {
   }
 }
 
+#oferta-educativa-grado .decorator {
+  max-width: 40px;
+}
 #oferta-educativa-grado h3, #oferta-educativa-grado .h3 {
   margin-bottom: 1.5rem;
 }
@@ -17263,6 +17274,9 @@ a:hover {
   font-size: 64px;
 }
 @media (max-width: 767px) {
+  #oferta-educativa-grado #oferta-grado-portada .decorator {
+    max-width: 30px !important;
+  }
   #oferta-educativa-grado #oferta-grado-portada span {
     font-size: 18px;
   }
@@ -17593,8 +17607,11 @@ a:hover {
   #secretaria h2, #secretaria .h2 {
     font-size: 40px;
   }
-  #secretaria .primary-background h3, #secretaria .primary-background .h3, #secretaria .primary-background p, #secretaria .primary-background a {
+  #secretaria .primary-background h3, #secretaria .primary-background .h3 {
     font-size: 22px;
+  }
+  #secretaria .primary-background p, #secretaria .primary-background a {
+    font-size: 18px;
   }
   #secretaria .primary-background .icon-container i {
     font-size: 40px;
@@ -17775,6 +17792,24 @@ a:hover {
 #solicitud-alumnos-fct p {
   font-size: 16px;
 }
+#oferta-empleo-contenido ul li,
+#solicitud-alumnos-contenido ul li,
+#solicitud-alumnos-fct ul li {
+  color: #002562;
+  font-size: 16px;
+}
+#oferta-empleo-contenido table td,
+#solicitud-alumnos-contenido table td,
+#solicitud-alumnos-fct table td {
+  color: #002562;
+  font-size: 16px;
+}
+#oferta-empleo-contenido table th,
+#solicitud-alumnos-contenido table th,
+#solicitud-alumnos-fct table th {
+  color: #FF8000;
+  font-size: 16px;
+}
 
 #solicitud-alumnos-fct {
   margin-bottom: 3rem;
@@ -17782,9 +17817,23 @@ a:hover {
 #solicitud-alumnos-fct h4, #solicitud-alumnos-fct .h4 {
   font-weight: 500;
 }
-#solicitud-alumnos-fct ul li {
-  color: #002562;
-  font-size: 16px;
+
+@media (max-width: 767px) {
+  #solicitud-alumnos-contenido .table-responsive {
+    word-break: keep-all !important;
+  }
+  #solicitud-alumnos-contenido .table-responsive table thead {
+    vertical-align: middle;
+  }
+  #solicitud-alumnos-contenido .table-responsive table thead th {
+    font-size: 12px;
+  }
+  #solicitud-alumnos-contenido .table-responsive table tbody {
+    vertical-align: middle;
+  }
+  #solicitud-alumnos-contenido .table-responsive table tbody td.bold {
+    font-size: 12px !important;
+  }
 }
 
 #orientacion-antes-titular .pre-title,
@@ -17980,6 +18029,45 @@ a:hover {
 }
 #search-wrapper .pagination {
   margin-top: 3rem;
+}
+
+.wpr-grid-image-wrap {
+  height: 375px !important;
+}
+
+#departamento #departamento-portada .img-container {
+  max-height: 600px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+}
+#departamento #banner-orientacion {
+  width: 100%;
+}
+#departamento #banner-orientacion .d-inline-flex {
+  display: flex !important;
+  gap: 3rem;
+}
+#departamento #banner-orientacion .d-inline-flex a {
+  flex: 1;
+  display: block;
+}
+#departamento #banner-orientacion .d-inline-flex a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 767px) {
+  #departamento .decorator {
+    max-width: 30px !important;
+  }
+}
+
+#politicas-page-wrapper {
+  margin-top: 115px;
+  padding: 3rem 0;
 }
 
 /*# sourceMappingURL=child-theme.css.map */

@@ -1,7 +1,7 @@
-<div class="container p-sm-20">
+<div class="container">
     <div class="row">
         <div class="col col-12">
-            <h1><?php echo get_the_title(); ?></h1>
+            <h1>Proyecto <span class="accent">Funcional</span></h1>
             <p>El Proyecto Funcional es el instrumento de planificación que concreta lo que será nuestra labor durante los próximos cuatro años. Nos marca el camino para llegar a nuestro objetivo principal: formar trabajadores con una alta cualificación, capaces de intervenir en el sistema laboral, no sólo con garantías de inserción, sino también con garantías de éxito en sus cualificaciones profesionales.</p>
 
             <div class="my-5">

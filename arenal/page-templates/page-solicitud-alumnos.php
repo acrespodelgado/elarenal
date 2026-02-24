@@ -37,7 +37,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 				<?php echo do_shortcode('[smartslider3 slider="12"]'); ?>
 				<?php include get_stylesheet_directory() . '/patterns/empresas/solicitud-alumnos/contenido.php'; ?>
 				<?php include get_stylesheet_directory() . '/patterns/formularios/formulario-solicitud-alumnos.php'; ?>
-				<?php include get_stylesheet_directory() . '/patterns/empresas/solicitud-alumnos/fct.php'; ?>
+				<?php // include get_stylesheet_directory() . '/patterns/empresas/solicitud-alumnos/fct.php'; ?>
                 				
 				</main>
 

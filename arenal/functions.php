@@ -106,3 +106,21 @@ function register_my_menus() {
     );
 }
 add_action('init', 'register_my_menus');
+
+/**
+ * Shortcode para mostrar noticias de actualidad
+ */
+add_shortcode('noticias_actualidad', function() {
+    ob_start();
+    include get_stylesheet_directory() . '/patterns/noticia/noticias-shortcode.php';
+    return ob_get_clean();
+});
+
+/**
+ * Shortcode para mostrar noticias de emprendeher
+ */
+add_shortcode('noticias_emprendeher', function() {
+    ob_start();
+    include get_stylesheet_directory() . '/patterns/noticia/noticias-emprendeher.php';
+    return ob_get_clean();
+});

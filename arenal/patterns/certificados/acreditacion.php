@@ -19,21 +19,21 @@
     <div class="container p-sm-20">
         <div class="row">
             <div class="col col-12">
-                <h3>¿EN QUÉ CONSISTE?</h3>
+                <h3>¿EN QUÉ <span class="accent">CONSISTE?</span></h3>
                 <p>Es el proceso por el que la persona candidata adquiere una acreditación oficial de sus competencias profesionales adquiridas por experiencia laboral o vías no formales de formación, previa evaluación de las mismas.</p>
                 <p>Este proceso permite acreditar unidades de competencia que forman parte de un Título de Formación Profesional o de un Certificado de Profesionalidad.</p>
                 <p>Finalizado el procedimiento, la comisión de evaluación indicará la formación complementaria que el participante tiene que cursar, si desea continuar su formación para obtener el <strong>Título de Formación Profesional o el Certificado de Profesionalidad.</strong></p>
                 <h3 class="mt-5">¿A quién le puede interesar?</h3>
                 <p>Si has adquirido tus conocimientos profesionales desarrollando una actividad laboral y no tienes titulación, las Administraciones convocan procedimientos de evaluación y acreditación de competencias profesionales en los que se puede obtener, tras unas pruebas concretas, una <strong>acreditación con validez en todo el territorio nacional</strong> y orientaciones sobre cómo cursando una formación complementaria, podrás obtener el <strong>Título de Formación Profesional o el Certificado de Profesionalidad.</strong></p>
                 <ul class="list-unstyled">
-                    <li><img src="<?php echo get_site_url() . '/img/adorno_oferta_light.png'; ?>" alt="Decorador light" class="img-fluid decorator" /><strong>Si abandonaste tus estudios para incorporarte al mundo laboral</strong> y has aprendido tu profesión en tu puesto de trabajo. </li>
-                    <li><img src="<?php echo get_site_url() . '/img/adorno_oferta_light.png'; ?>" alt="Decorador light" class="img-fluid decorator" /><strong>Si has realizado actividades no remuneradas</strong> que te han permitido adquirir competencias del mundo laboral </li>
-                    <li><img src="<?php echo get_site_url() . '/img/adorno_oferta_light.png'; ?>" alt="Decorador light" class="img-fluid decorator" />Si te has formado por <strong>vías no formales.</strong></li>
+                    <li><p class="d-flex align-items-center gap-1"><img src="<?php echo get_site_url() . '/img/adorno_oferta_light.png'; ?>" alt="Decorador light" class="img-fluid decorator" /><span><b>Si abandonaste tus estudios para incorporarte al mundo laboral</b> y has aprendido tu profesión en tu puesto de trabajo.</span></p></li>
+                    <li><p class="d-flex align-items-center gap-1"><img src="<?php echo get_site_url() . '/img/adorno_oferta_light.png'; ?>" alt="Decorador light" class="img-fluid decorator" /><span><b>Si has realizado actividades no remuneradas</b> que te han permitido adquirir competencias del mundo laboral</span></p></li>
+                    <li><p class="d-flex align-items-center gap-1"><img src="<?php echo get_site_url() . '/img/adorno_oferta_light.png'; ?>" alt="Decorador light" class="img-fluid decorator" /><span><b>Si te has formado por vías no formales.</b></span></p></li>
                 </ul>
                 <a href="https://www.juntadeandalucia.es/educacion/portals/web/iacp/convocatorias" class="btn btn-primary" target="_blank">MÁS INFORMACIÓN <i class="fa fa-long-arrow-right accent"></i></a>
             </div>
             <div class="col col-12 mt-5">
-                <h3>FOLLETO INFORMATIVO</h3>
+                <h3>FOLLETO <span class="accent">INFORMATIVO</span></h3>
                 <p>En el siguiente botón puedes descargar en formato PDF el folleto informativo donde se resume todo el procedimiento de acreditaciones profesionales: requisitos, plazos, documentación a aportar, entre otras cuestiones:</p>
                 <a href="https://www.juntadeandalucia.es/educacion/portals/web/iacp/convocatorias" class="btn btn-primary" target="_blank">Descargar folleto <i class="fa fa-long-arrow-right accent"></i></a>
             </div>

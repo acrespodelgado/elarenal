@@ -1,0 +1,39 @@
+#departamento {
+
+    #departamento-portada {
+
+        .img-container {
+            max-height: 600px;
+            object-fit: cover;
+            overflow: hidden;
+        }
+    }
+
+    #banner-orientacion {
+        width: 100%;
+
+        .d-inline-flex {
+            display: flex !important;
+            gap: 3rem;
+
+            a {
+                flex: 1;
+                display: block;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        .decorator {
+            max-width: 30px !important;
+        }
+    }
+}

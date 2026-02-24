@@ -23,7 +23,7 @@ if($carnes = get_field('carnes_profesionales')) :
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12">
-                                        <p>
+                                        <p class="d-flex align-items-center">
                                             <img src="<?php echo get_site_url(); ?>/img/adorno_oferta_educativa.png" alt="Adorno oferta educativa" class="img-fluid decorator">
                                             <?php echo $carne; ?>
                                         </p>

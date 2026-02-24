@@ -36,7 +36,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 					<?php echo do_shortcode('[smartslider3 slider="13"]'); ?>
 					<?php include get_stylesheet_directory() . '/patterns/orientacion/despues/titular.php'; ?>
 					<?php include get_stylesheet_directory() . '/patterns/orientacion/despues/contenido.php'; ?>
-					<?php include get_stylesheet_directory() . '/patterns/formularios/formulario.php'; ?>
+					<?php include get_stylesheet_directory() . '/patterns/formularios/formulario-orientacion.php'; ?>
 
 				</main>
 

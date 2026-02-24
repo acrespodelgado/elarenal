@@ -34,6 +34,7 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 				<main class="site-main" id="main" role="main">
                 
                 <?php include get_stylesheet_directory() . '/patterns/home/home-slider.php'; ?>
+				<?php include get_stylesheet_directory() . '/patterns/home/video.php'; ?>
                 <div id="noticia-background">
                     <div class="container-fluid">
 						<div class="row">

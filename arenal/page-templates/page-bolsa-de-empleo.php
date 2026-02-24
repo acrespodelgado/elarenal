@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page - Presentación y Bienvenida
+ * Template Name: Page - Bolsa de Empleo
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -33,10 +33,10 @@ if ( is_page_template( 'page-templates/no-title.php' ) ) {
 
 				<main class="site-main" id="main" role="main">
                 
-				<?php include get_stylesheet_directory() . '/patterns/presentacion/presentacion-y-bienvenida.php'; ?>
-				<?php // include get_stylesheet_directory() . '/patterns/oferta-educativa/oferta-educativa-slider.php'; ?>
-				<?php // include get_stylesheet_directory() . '/patterns/presentacion/oferta-educativa-extra.php'; ?>
-
+				<?php include get_stylesheet_directory() . '/patterns/empresas/bolsa-empleo/titular.php'; ?>
+				<?php echo do_shortcode('[smartslider3 slider="12"]'); ?>
+				<?php include get_stylesheet_directory() . '/patterns/empresas/bolsa-empleo/contenido.php'; ?>
+                				
 				</main>
 
 			</div><!-- #primary -->

@@ -16,9 +16,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
 <div class="wrapper" id="wrapper-footer">
-    <div class="container">
-        <footer class="site-footer">
-            <div class="row w-100">
+	<footer class="site-footer">
+    	<div class="container">
+            <div class="row">
                 <div class="col-12">
                     <div class="d-flex justify-content-between">
                         <div class="footer-logo">
@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                 </div>
 			</div>
-			<div class="row w-100 align-items-end">
+			<div class="row align-items-end">
 				<div class="col col-12 col-lg-4">
 					<p>Centro público integrado de formación profesional</p>
 					<p><a href="https://maps.app.goo.gl/U6H6Tugc6DVxcSgMA">Avenida Ramón y Cajal, s/n · 41701 Dos Hermanas (Sevilla)</a></p>
@@ -52,8 +52,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<li><a href="<?php echo get_site_url();?>/politica-de-privacidad">Política de privacidad</a></li>
 						<li><a href="<?php echo get_site_url();?>/aviso-legal">Aviso Legal</a></li>
 						<li><a href="<?php echo get_site_url();?>/politica-de-cookies">Política de cookies</a></li>
-						<li><a href="<?php echo get_site_url();?>/#">Políticas de calidad</a></li>
-						<li><a href="<?php echo get_site_url();?>/#">Requisitos de proveedores</a></li>
+						<li><a href="<?php echo get_site_url();?>/documentos/Política_calidad_30-05-25.pdf" target="_blank" download>Políticas de calidad</a></li>
+						<li><a href="<?php echo get_site_url();?>/documentos/Politica_y_requisitos_de_proveedores_CPIFP_EL_ARENAL.pdf" target="_blank" download>Requisitos de proveedores</a></li>
 						<li><a href="<?php echo get_site_url();?>/secretaria">Secretaría</a></li>
 						<li><a href="<?php echo get_site_url();?>/proyecto-funcional">Proyecto Funcional</a></li>
 					</ul>
@@ -72,9 +72,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</ul>
 				</div>
 			</div>
-		</footer><!-- row end -->
-
-	</div><!-- container end -->
+		</div><!-- container end -->
+		
+	</footer><!-- row end -->
 
 </div><!-- wrapper end -->
 

@@ -1,15 +1,9 @@
-<div id="noticias">
-    <div class="container p-sm-20">
+<div id="noticias" class="p-0">
+    <div class="container p-0">
         <div class="row">
-            <div class="col-12">
-                <?php $secretaria_page = is_page('secretaria'); ?>
-                <?php if(!$secretaria_page): ?>
-                    <h3>Noticias <span class="accent">y actualidad</span></h3>
-                    <p>En esta página tendrás toda la información útil de todas las noticias del centro.</p>
-                    <p>Conoce la información de última hora del CPIFP El Arenal: todo relativo a cada ciclo formativo, matriculación y cursos.</p>
-                <?php else: ?>
-                    <h3>Noticias y actualidad - <span class="accent">Secretaría</span></h3>
-                <?php endif; ?>
+            <div class="col-12 p-0">
+                <h3>Noticias <span class="accent">y actualidad</span></h3>
+                <p>Conoce la información de última hora relacionado con EmprendeHer.</p>
                 <div class="row">
                 <?php 
 
@@ -19,11 +13,18 @@
                     $posts_per_page = $noticias_page ? 12 : 6;
                     
                     $args = array(
-                        'post_type' => array('noticia', 'noticia-departamento'),
+                        'post_type' => 'noticia',
                         'posts_per_page' => $posts_per_page,
                         'paged' => $paged,
                         'orderby' => 'date',
-                        'order' => 'DESC'
+                        'order' => 'DESC',
+                        'meta_query' => array(
+                            array(
+                                'key'     => 'grado',
+                                'value'   => 'emprendeher',
+                                'compare' => 'LIKE'
+                            )
+                        )
                     ); ?>
 
                     <?php

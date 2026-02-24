@@ -10,7 +10,17 @@
                     <ul class="list-unstyled">
                         <?php foreach($aprender_array as $aprender_item) : ?>
                             <?php if(trim($aprender_item)) : ?>
-                                <li><img src="<?php echo get_site_url(); ?>/img/adorno_oferta_educativa.png" alt="Adorno oferta educativa" class="img-fluid decorator"><?php echo trim($aprender_item); ?></li>
+                                <li>
+                                    <p class="d-flex align-items-center gap-1">
+                                        <img 
+                                            src="<?php echo get_site_url(); ?>/img/adorno_oferta_educativa.png" 
+                                            alt="Adorno oferta educativa" 
+                                            class="img-fluid decorator flex-shrink-0"
+                                            style="width:30px; height:auto; object-fit:contain;"
+                                        >
+                                        <span><?php echo trim($aprender_item); ?></span>
+                                    </p>
+                                </li>
                             <?php endif; ?>
                         <?php endforeach; ?>
                     </ul>
